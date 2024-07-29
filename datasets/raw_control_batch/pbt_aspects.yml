@@ -1,0 +1,39 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: batchid
+    type: integer
+    nullable: true
+    metadata:
+      description: The unique identifier for the control batch
+      mappings: []
+      tags: []
+  - name: insertdate
+    type: timestamp
+    nullable: true
+    metadata:
+      description: The date when the batch was inserted into the system
+      mappings: []
+      tags: []
+  - name: status
+    type: integer
+    nullable: true
+    metadata:
+      description: The current status of the batch
+      mappings: []
+      tags: []
+  - name: process
+    type: string
+    nullable: true
+    metadata:
+      description: The specific process or operation associated with the batch
+      mappings: []
+      tags: []
+  - name: batch_status_check
+    type: integer
+    nullable: true
+    metadata:
+      description: Status check result for the batch
+      mappings: []
+      tags: []

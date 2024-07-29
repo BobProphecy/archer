@@ -1,0 +1,18 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: code
+    type: string
+    nullable: true
+    metadata:
+      description: The code representing the disability type
+      mappings: []
+      tags: []
+  - name: description
+    type: string
+    nullable: true
+    metadata:
+      description: The description of the disability type
+      mappings: []
+      tags: []

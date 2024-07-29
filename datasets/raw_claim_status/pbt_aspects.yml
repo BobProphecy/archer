@@ -1,0 +1,18 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: code
+    type: string
+    nullable: true
+    metadata:
+      description: The unique code associated with the claim status
+      mappings: []
+      tags: []
+  - name: description
+    type: string
+    nullable: true
+    metadata:
+      description: The detailed description of the claim status
+      mappings: []
+      tags: []

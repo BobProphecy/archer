@@ -1,0 +1,18 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: code
+    type: string
+    nullable: true
+    metadata:
+      description: The code representing the nature of injury
+      mappings: []
+      tags: []
+  - name: description
+    type: string
+    nullable: true
+    metadata:
+      description: Description of the nature of injury
+      mappings: []
+      tags: []
