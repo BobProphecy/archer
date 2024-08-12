@@ -1,19 +1,20 @@
 from pyspark.sql import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
-from pov_exercise.config.ConfigStore import *
-from pov_exercise.functions import *
+from pov_exercise_ntong.config.ConfigStore import *
+from pov_exercise_ntong.functions import *
 from prophecy.utils import *
-from pov_exercise.graph import *
+from pov_exercise_ntong.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    stage_claim_table(spark)
     df_batch = batch(spark)
-    batch_lookup_creation(spark, df_batch)
     df_customer_claim_file = customer_claim_file(spark)
-    df_reformat_order_category = reformat_order_category(spark, df_customer_claim_file)
-    landing_customer1_claim(spark)
+    df_select_claimant_name = select_claimant_name(spark, df_customer_claim_file)
     df_customer1_mapping = customer1_mapping(spark)
+    df_pivot_target_column = pivot_target_column(spark, df_customer1_mapping)
+    stage_claim_table(spark, df_pivot_target_column)
+    batch_lookup_creation(spark, df_batch)
+    landing_customer1_claim(spark)
 
 def main():
     spark = SparkSession.builder\
@@ -23,10 +24,10 @@ def main():
                 .appName("PoV_Exercise")\
                 .getOrCreate()
     Utils.initializeFromArgs(spark, parse_args())
-    spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/PoV_Exercise")
+    spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/PoV_Exercise_ntong")
     registerUDFs(spark)
     
-    MetricsCollector.instrument(spark = spark, pipelineId = "pipelines/PoV_Exercise", config = Config)(pipeline)
+    MetricsCollector.instrument(spark = spark, pipelineId = "pipelines/PoV_Exercise_ntong", config = Config)(pipeline)
 
 if __name__ == "__main__":
     main()

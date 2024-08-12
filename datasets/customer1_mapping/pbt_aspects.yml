@@ -1,0 +1,25 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: Target
+    type: string
+    nullable: true
+    metadata:
+      description: The intended destination for data mapping.
+      mappings: []
+      tags: []
+  - name: SourceColumn
+    type: string
+    nullable: true
+    metadata:
+      description: The name of the original column from the source data.
+      mappings: []
+      tags: []
+  - name: TargetColumn
+    type: string
+    nullable: true
+    metadata:
+      description: The column in the target dataset where data will be mapped.
+      mappings: []
+      tags: []
