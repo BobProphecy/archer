@@ -1,5 +1,6 @@
 name: archer
-description: ''
+description: |
+  Archer data exercise - 7/29/2024
 version: 0.0.1
 author: bobw@prophecy.io
 language: python
@@ -44,6 +45,20 @@ pipelines:
       - datasets/nature_of_inj
       - datasets/treatment_type
       - datasets/type_of_claim
+    subgraphs: []
+    dependencies: {}
+  pipelines/PoV_Exercise:
+    name: PoV_Exercise
+    description: ''
+    author: bobw@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-07-31 13:43:17'
+    datasets:
+      inputs:
+      - datasets/customer_claim_file
+      outputs: []
     subgraphs: []
     dependencies: {}
 datasets:
@@ -333,6 +348,45 @@ datasets:
         description: ''
         author: bobw@prophecy.io
         createdAt: '2024-07-29 21:56:33'
+  datasets/customer_claim_file:
+    name: customer_claim_file
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-07-31 13:51:03'
+    mode: batch
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: File
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-07-31 13:51:03'
+  datasets/raw_claim_1:
+    name: raw_claim_1
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-08-08 20:25:55'
+    mode: stream
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: File
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-08-08 20:25:56'
+  datasets/customer_claim_file_stream:
+    name: customer_claim_file_stream
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-08-08 20:30:04'
+    mode: stream
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: Database
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-08-08 20:30:04'
 templates: {}
 jobs: {}
 gemContainer:
@@ -359,26 +413,26 @@ sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
 - type: plibMaven
-  modifiedAt: '2024-07-29T21:43:13.957855Z'
+  modifiedAt: '2024-08-08T20:17:13.057723Z'
   name: plibMaven
   version: 8.0.29
-  id: '1664476168'
-  createdAt: '2024-07-29T21:43:13.957749Z'
+  id: '1218097084'
+  createdAt: '2024-08-08T20:17:13.057577Z'
 - type: plibPypi
-  modifiedAt: '2024-07-29T21:43:13.958045Z'
+  modifiedAt: '2024-08-08T20:17:13.057954Z'
   name: plibPypi
   version: 1.9.9
-  id: '363454012'
-  createdAt: '2024-07-29T21:43:13.957957Z'
+  id: '1326775046'
+  createdAt: '2024-08-08T20:17:13.057862Z'
 projectDependencies:
   '12654':
     projectUID: 12654
     projectName: ProphecySparkBasicsPython
     repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
-    version: 0.2.25
+    version: 0.2.26
     isDefault: true
     author: null
-    createdAt: '2024-07-29 19:49:52'
+    createdAt: '2024-08-12 12:53:20'
   '12655':
     projectUID: 12655
     projectName: ProphecyWarehousePython
@@ -387,6 +441,14 @@ projectDependencies:
     isDefault: true
     author: null
     createdAt: '2024-07-29 19:49:52'
+  '12656':
+    projectUID: 12656
+    projectName: ProphecyStreamingPython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12656.git&subPath=
+    version: 0.0.2
+    isDefault: true
+    author: null
+    createdAt: '2024-08-08 20:17:11'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
