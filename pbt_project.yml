@@ -81,6 +81,22 @@ pipelines:
       - datasets/customer1_claim
     subgraphs: []
     dependencies: {}
+  pipelines/PoV_Exercise_basic:
+    name: PoV_Exercise_basic
+    description: null
+    author: bobw@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-08-13 19:40:53'
+    datasets:
+      inputs:
+      - datasets/control_batch
+      - datasets/customer_claim_file
+      outputs:
+      - datasets/customer1_claim
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/raw_control_batch:
     name: raw_control_batch

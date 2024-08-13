@@ -7,4 +7,4 @@ from pov_exercise.config.ConfigStore import *
 from pov_exercise.functions import *
 
 def landing_customer1_claim(spark: SparkSession, in0: DataFrame):
-    in0.write.format("delta").mode("overwrite").saveAsTable("`archer_pov`.`landing`.`customer1_claim`")
+    in0.write.format("delta").mode("append").saveAsTable("`archer_pov`.`landing`.`customer1_claim`")
