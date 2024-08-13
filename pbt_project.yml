@@ -76,11 +76,9 @@ pipelines:
     datasets:
       inputs:
       - datasets/control_batch
-      - datasets/customer1_mapping
       - datasets/customer_claim_file
       outputs:
       - datasets/customer1_claim
-      - datasets/stage_claim_table
     subgraphs: []
     dependencies: {}
 datasets:

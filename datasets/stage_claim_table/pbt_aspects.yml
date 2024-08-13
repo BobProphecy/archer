@@ -1,4 +1,11 @@
 version: 1
 schema:
   type: struct
-  fields: []
+  fields:
+  - name: TargetColumn
+    type: string
+    nullable: true
+    metadata:
+      description: The column in the target dataset where data will be mapped.
+      mappings: []
+      tags: []
