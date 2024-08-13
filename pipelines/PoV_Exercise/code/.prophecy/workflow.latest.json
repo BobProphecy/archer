@@ -88,6 +88,42 @@
     "sourcePort" : "HjGd8JyCeE77wWCOjoLRB$$bHX4tBXgqbnlzC3ctBzFc",
     "target" : "0i7aNYqMMc5aZxJ5F_jM3$$Xz76XXdtG2FOA2kfIfx-O",
     "targetPort" : "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ"
+  }, {
+    "id" : "hTF4vxqDd3zRihKuBXjkW$$bCvLwYdLLoL0LpKB_y4RR",
+    "source" : "mjXYLDRSF8Qi1Wrt5vjpK$$zZytO6rcs-MfM-1kZFfI1",
+    "sourcePort" : "vnjmNlaquqnXlNxFEkhDE$$MiKUV9tD_TtLhsPCDEo8i",
+    "target" : "Edzn9HezbpQ-1yKYqQmUj$$kgf7obnwTywyZZTzkKh1W",
+    "targetPort" : "ZX2g_Hx78APAIVZcbXc5h$$yyJXCgnJoye4-VAnJboCy"
+  }, {
+    "id" : "NgK3lSCmfDlrFRNdEjj0C",
+    "source" : "mjXYLDRSF8Qi1Wrt5vjpK$$zZytO6rcs-MfM-1kZFfI1",
+    "sourcePort" : "vnjmNlaquqnXlNxFEkhDE$$MiKUV9tD_TtLhsPCDEo8i",
+    "target" : "ha0dgFGTXUHz33X7a4jbd$$e3tRBsjV73I9cIrvZHinf",
+    "targetPort" : "Z9GnjWl-HRS9gTF6f4CcD$$LzJ8wni9TWbaWHC8i0bac"
+  }, {
+    "id" : "1M34Mqbv1v27ShLLP0jxE$$JD6jry0yXBh-P_MuGMlZg",
+    "source" : "ha0dgFGTXUHz33X7a4jbd$$e3tRBsjV73I9cIrvZHinf",
+    "sourcePort" : "mTCst5UK9tkpBdtsc_Eot$$d8OVBQ1NTVdRRZ0cz9dY2",
+    "target" : "9gAPfYdq_7QfcrteYruc6$$bCUHx8HnrlvgPdEycRGx8",
+    "targetPort" : "yTnoTPN88WqnrJkoojpeZ$$F0JpXM812HKNLbavHsEU6"
+  }, {
+    "id" : "sNAljqpT0X4RY5o_mTZDY$$aMuZR6c6EnVMPHS44-E1M",
+    "source" : "EcrLKecYlcasig1GDnZGS$$GJXC0QiutyjmRsz6TD9ox",
+    "sourcePort" : "6xfLzZvvkYkjy_Pfkslfr$$X7-xh6DXNcr8F3deN1zpY",
+    "target" : "fuM83XLVx59zlWS-O2pxG$$vSJtwGe-jyiWNK35Jy9GT",
+    "targetPort" : "p4i9fE5vRPTKT5Yl28ZBN$$XVsLYT3d4hHG95FYj5zbq"
+  }, {
+    "id" : "54nXJohqtkf_zEp9J68eS$$U75qovB0cspVKJk2aaVh5",
+    "source" : "vwHQNixBPrM3bbnRmO-JP$$bjLMDSmsHkW7IQM7qoUZD",
+    "sourcePort" : "UH4pS4Zh5PAVQwjhSxWxR$$4XHafMEGca7l-pczP1UWx",
+    "target" : "EcrLKecYlcasig1GDnZGS$$GJXC0QiutyjmRsz6TD9ox",
+    "targetPort" : "H1m6JQ-vt-pO9Dwxe5faU$$kaKxB7hjJJHalHYHKPgUw"
+  }, {
+    "id" : "Oi0CYGl1rkuKLIEDsyGim",
+    "source" : "Edzn9HezbpQ-1yKYqQmUj$$kgf7obnwTywyZZTzkKh1W",
+    "sourcePort" : "v9-ndASag4qiPjomoheqg$$_DWfYF5fCb4D9pXS5cFzp",
+    "target" : "vwHQNixBPrM3bbnRmO-JP$$bjLMDSmsHkW7IQM7qoUZD",
+    "targetPort" : "q7Mr4Edn0mfLjQn6ozMBr$$aV3c4lWkQJPSuvzMDa8k6"
   } ],
   "processes" : {
     "NeGa1g8aINafllr_7flj8$$RsqUPI7BQ_Pky12DO09ul" : {
@@ -119,6 +155,58 @@
         "datasetId" : "datasets/customer_claim_file"
       }
     },
+    "EcrLKecYlcasig1GDnZGS$$GJXC0QiutyjmRsz6TD9ox" : {
+      "id" : "EcrLKecYlcasig1GDnZGS$$GJXC0QiutyjmRsz6TD9ox",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_2",
+        "slug" : "Reformat_2",
+        "x" : -1940,
+        "y" : -580,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "H1m6JQ-vt-pO9Dwxe5faU$$kaKxB7hjJJHalHYHKPgUw",
+          "slug" : "pivot_target_column",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "TargetColumn",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The column in the target dataset where data will be mapped.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "6xfLzZvvkYkjy_Pfkslfr$$X7-xh6DXNcr8F3deN1zpY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
     "fuM83XLVx59zlWS-O2pxG$$vSJtwGe-jyiWNK35Jy9GT" : {
       "id" : "fuM83XLVx59zlWS-O2pxG$$vSJtwGe-jyiWNK35Jy9GT",
       "component" : "Target",
@@ -135,7 +223,21 @@
       "ports" : {
         "inputs" : [ {
           "id" : "p4i9fE5vRPTKT5Yl28ZBN$$XVsLYT3d4hHG95FYj5zbq",
-          "slug" : "pivot_aggregation"
+          "slug" : "pivot_aggregation",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "TargetColumn",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The column in the target dataset where data will be mapped.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
@@ -144,6 +246,101 @@
       },
       "properties" : {
         "datasetId" : "datasets/stage_claim_table"
+      }
+    },
+    "Edzn9HezbpQ-1yKYqQmUj$$kgf7obnwTywyZZTzkKh1W" : {
+      "id" : "Edzn9HezbpQ-1yKYqQmUj$$kgf7obnwTywyZZTzkKh1W",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "pivot_target_column",
+        "slug" : "pivot_target_column",
+        "x" : -2200,
+        "y" : -580,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Transforms customer data to analyze different target categories, enabling better insights into customer segmentation.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ZX2g_Hx78APAIVZcbXc5h$$yyJXCgnJoye4-VAnJboCy",
+          "slug" : "customer1_mapping",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Target",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The intended destination for data mapping.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SourceColumn",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The name of the original column from the source data.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TargetColumn",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The column in the target dataset where data will be mapped.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "v9-ndASag4qiPjomoheqg$$_DWfYF5fCb4D9pXS5cFzp",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : true,
+        "aggregate" : [ {
+          "target" : "TargetColumn",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(TargetColumn)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : {
+          "format" : "sql",
+          "expression" : "TargetColumn"
+        },
+        "pivotValues" : [ ],
+        "activeTab" : "groupBy",
+        "columnsSelector" : [ "ZX2g_Hx78APAIVZcbXc5h$$yyJXCgnJoye4-VAnJboCy##TargetColumn" ],
+        "groupBy" : [ {
+          "target" : "TargetColumn",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "TargetColumn"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Aggregate",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     },
     "0i7aNYqMMc5aZxJ5F_jM3$$Xz76XXdtG2FOA2kfIfx-O" : {
@@ -1000,6 +1197,139 @@
         "valueColumns" : [ "status", "process", "batch_status_check", "batchid" ]
       }
     },
+    "ha0dgFGTXUHz33X7a4jbd$$e3tRBsjV73I9cIrvZHinf" : {
+      "id" : "ha0dgFGTXUHz33X7a4jbd$$e3tRBsjV73I9cIrvZHinf",
+      "component" : "TransposeAgg",
+      "metadata" : {
+        "label" : "pivot_aggregation",
+        "slug" : "pivot_aggregation",
+        "x" : -2200,
+        "y" : -720,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Transforms data to summarize information based on a specific target, allowing for easier analysis of key metrics.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Z9GnjWl-HRS9gTF6f4CcD$$LzJ8wni9TWbaWHC8i0bac",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "Target",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The intended destination for data mapping.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SourceColumn",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The name of the original column from the source data.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TargetColumn",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The column in the target dataset where data will be mapped.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "mTCst5UK9tkpBdtsc_Eot$$d8OVBQ1NTVdRRZ0cz9dY2",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : true,
+        "aggregate" : [ {
+          "target" : "TargetColumn",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(TargetColumn)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : {
+          "format" : "sql",
+          "expression" : "TargetColumn"
+        },
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "Z9GnjWl-HRS9gTF6f4CcD$$LzJ8wni9TWbaWHC8i0bac##TargetColumn" ],
+        "groupBy" : [ ]
+      }
+    },
+    "vwHQNixBPrM3bbnRmO-JP$$bjLMDSmsHkW7IQM7qoUZD" : {
+      "id" : "vwHQNixBPrM3bbnRmO-JP$$bjLMDSmsHkW7IQM7qoUZD",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "limit_to_one",
+        "slug" : "limit_to_one",
+        "x" : -2060,
+        "y" : -580,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Retrieves a single record from the dataset.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "q7Mr4Edn0mfLjQn6ozMBr$$aV3c4lWkQJPSuvzMDa8k6",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "TargetColumn",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The column in the target dataset where data will be mapped.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "UH4pS4Zh5PAVQwjhSxWxR$$4XHafMEGca7l-pczP1UWx",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "limit" : "1"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Limit",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
     "uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c" : {
       "id" : "uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c",
       "component" : "Target",
@@ -1025,6 +1355,49 @@
       },
       "properties" : {
         "datasetId" : "datasets/customer1_claim"
+      }
+    },
+    "9gAPfYdq_7QfcrteYruc6$$bCUHx8HnrlvgPdEycRGx8" : {
+      "id" : "9gAPfYdq_7QfcrteYruc6$$bCUHx8HnrlvgPdEycRGx8",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : -2020,
+        "y" : -720,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "yTnoTPN88WqnrJkoojpeZ$$F0JpXM812HKNLbavHsEU6",
+          "slug" : "pivot_aggregation",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "ui2kCftm_1FjcNbHLR8-n$$SAr9ht3f2HkTyuGd5sK5w",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     },
     "R1s9kBdlO6U2ilWg32UY6$$Fk0ZBGn8hRFKmeQgZhxF9" : {
@@ -1062,8 +1435,8 @@
       "metadata" : {
         "label" : "customer1_mapping",
         "slug" : "customer1_mapping",
-        "x" : -2420,
-        "y" : -680,
+        "x" : -2360,
+        "y" : -640,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -1092,22 +1465,6 @@
     "autoUpdateOnRun" : false
   },
   "diagnostics" : [ {
-    "property" : "$.workflow.processes.fuM83XLVx59zlWS-O2pxG$$vSJtwGe-jyiWNK35Jy9GT",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Please connect input port pivot_aggregation",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
     "property" : "$.workflow.processes.uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c",
     "range" : {
       "start" : {
