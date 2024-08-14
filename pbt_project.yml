@@ -485,30 +485,6 @@ datasets:
         createdAt: '2024-08-14 18:35:37'
 templates: {}
 jobs:
-  jobs/JobTest1:
-    name: JobTest1
-    description: ''
-    fabricUID: 9631
-    scheduler:
-      Databricks: {}
-    cloudProvider: null
-    jobSize: small
-    scheduleCron: None
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines: []
-    jobClusterMode:
-      clusterMode:
-        Single: {}
-      clusterId: null
-    enabled: null
-    createdAt: '2024-08-14 14:59:05'
-    author: bobw@prophecy.io
-    models: []
   jobs/ArcherJob:
     name: ArcherJob
     description: ''
@@ -530,7 +506,7 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: null
+    enabled: false
     createdAt: '2024-08-14 19:40:19'
     author: bobw@prophecy.io
     models: []

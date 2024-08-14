@@ -70,7 +70,9 @@
       }, {
         "whl" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/PoV_Exercise_Orchestrate-1.0-py3-none-any.whl"
       } ],
-      "email_notifications" : { },
+      "email_notifications" : {
+        "on_failure" : [ "bobw@prophecv.io" ]
+      },
       "max_retries" : 0
     } ],
     "max_concurrent_runs" : 1,
@@ -78,7 +80,8 @@
       "quartz_cron_expression" : "0 0 0 1/1 * ? *",
       "timezone_id" : "UTC",
       "pause_status" : "PAUSED"
-    }
+    },
+    "access_control_list" : [ ]
   },
   "cluster_mode" : {
     "clusterMode" : "Single"

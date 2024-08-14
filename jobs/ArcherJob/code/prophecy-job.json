@@ -22,10 +22,10 @@
       "type" : "Inherited",
       "retries" : 0,
       "alerting" : {
-        "emails" : "",
+        "emails" : "bobw@prophecv.io",
         "onStart" : false,
         "onSuccess" : false,
-        "onFailure" : false
+        "onFailure" : true
       }
     },
     "availableFabrics" : [ {
@@ -54,7 +54,8 @@
       "scalalibsResolutionMode" : {
         "PublicCentral" : { }
       }
-    } ]
+    } ],
+    "accessControlList" : [ ]
   },
   "processes" : {
     "TqVlKrSCBF6-z3HvU1S5w" : {
