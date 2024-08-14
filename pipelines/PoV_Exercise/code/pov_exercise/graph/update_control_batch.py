@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from pov_exercise.config.ConfigStore import *
 from pov_exercise.functions import *
 
-def batch(spark: SparkSession) -> DataFrame:
-    return spark.read.table("`archer_pov`.`control`.`batch`")
+def update_control_batch(spark: SparkSession, in0: DataFrame):
+    in0.write.format("delta").mode("append").saveAsTable("`archer_pov`.`control`.`batch`")

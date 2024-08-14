@@ -6,7 +6,5 @@ from prophecy.libs import typed_lit
 from pov_exercise.config.ConfigStore import *
 from pov_exercise.functions import *
 
-def batch_lookup_creation(spark: SparkSession, batch: DataFrame):
-    keyColumns = ['''last_batch''']
-    valueColumns = ['''batchid''']
-    createLookup("batch_lookup", batch, spark, keyColumns, valueColumns)
+def control_batch(spark: SparkSession) -> DataFrame:
+    return spark.read.table("`archer_pov`.`control`.`batch`")

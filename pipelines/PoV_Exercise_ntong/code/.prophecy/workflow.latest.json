@@ -148,7 +148,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "CLAIM_NUMBER",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "Unique identifier for the claim",
@@ -229,7 +229,7 @@
               }
             }, {
               "name" : "DATE_OF_INJURY",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "Date when the injury occurred",
@@ -238,7 +238,7 @@
               }
             }, {
               "name" : "DATE_OF_CLAIM",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "Date when the claim was filed",
@@ -256,7 +256,7 @@
               }
             }, {
               "name" : "CLAIM_AMOUNT",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "The amount claimed by the customer",
@@ -310,7 +310,7 @@
               }
             }, {
               "name" : "EMPLOYER_POSTAL_CODE",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "Postal code of the employer's address",
@@ -923,16 +923,16 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The unique identifier for the control batch",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "insertdate",
               "type" : "timestamp",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "The date when the batch was inserted into the system",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }

@@ -77,12 +77,6 @@
     "configurationVersion" : "v2"
   },
   "connections" : [ {
-    "id" : "Ofu8aBBq0c880hn8CHVah$$WbW5RNyMVNZ5cZGUYvfg1",
-    "source" : "R1s9kBdlO6U2ilWg32UY6$$Fk0ZBGn8hRFKmeQgZhxF9",
-    "sourcePort" : "nVE5guuagboWxxFBswTnh$$I8URe36XloZZ5efnVEiZk",
-    "target" : "FFzmmmeWjMaUhpNeed4aQ$$ghEsSvQUjbDadbYfeM0BZ",
-    "targetPort" : "kwBR4qKyNO9ttZ4ad13Ii$$jcUWixWEbukQx4olf68K3"
-  }, {
     "id" : "4MOLmbSWhHYuP3nclI7eC",
     "source" : "NeGa1g8aINafllr_7flj8$$RsqUPI7BQ_Pky12DO09ul",
     "sourcePort" : "HjGd8JyCeE77wWCOjoLRB$$bHX4tBXgqbnlzC3ctBzFc",
@@ -101,11 +95,47 @@
     "target" : "KtCFdkmlolHuhMqJ_xblq$$CkyzkWJypt9D6M817bQQY",
     "targetPort" : "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n"
   }, {
-    "id" : "1R0OO--29L9lud2xN28Iz",
+    "id" : "43m38uhy1QO8GNXuEmlri",
+    "source" : "MAH7LYyl44ptmhaNg3Q0n$$Yo4f7d5jE9ik9nGA6iaaq",
+    "sourcePort" : "lyKD_e0nBfp_HNVYLCFcW$$rDTL-USVV-3nIXnKA4qJW",
+    "target" : "Gy2e0gm6X-MQtYECM8DWP$$6leuTfTb-AVkw5DcoUfw7",
+    "targetPort" : "0sREF2DmbQBlxm5PRFMa7$$n7dBPPj1LOGzRY2p3jfYV"
+  }, {
+    "id" : "VG7AsE4KbPEJpoCxU-lfb$$ZSwZuB98waZVE9haAWUaK",
+    "source" : "Gy2e0gm6X-MQtYECM8DWP$$6leuTfTb-AVkw5DcoUfw7",
+    "sourcePort" : "Od7vN81Kad-sXr5pC4CEr$$nZak_Yz2V0KA2n_uN0dag",
+    "target" : "FFzmmmeWjMaUhpNeed4aQ$$ghEsSvQUjbDadbYfeM0BZ",
+    "targetPort" : "kwBR4qKyNO9ttZ4ad13Ii$$jcUWixWEbukQx4olf68K3"
+  }, {
+    "id" : "PHjs4AagiiCU78mGBr5BH",
+    "source" : "MAH7LYyl44ptmhaNg3Q0n$$Yo4f7d5jE9ik9nGA6iaaq",
+    "sourcePort" : "lyKD_e0nBfp_HNVYLCFcW$$rDTL-USVV-3nIXnKA4qJW",
+    "target" : "MkUPJGMFHo-UprHnZGu7W$$96PO3NO-XBcnbC9TEOVdP",
+    "targetPort" : "6TQrmLpb13TzDeaoil1UF$$YegMFtUDlj84hdlEta4MB"
+  }, {
+    "id" : "EBI9OC_elaxfVmi1FxUI8",
     "source" : "KtCFdkmlolHuhMqJ_xblq$$CkyzkWJypt9D6M817bQQY",
     "sourcePort" : "AIXfAsjw4j-J__d8jBZm6$$xGzE2P8tRU9iWXLhqP_-A",
     "target" : "uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c",
     "targetPort" : "VPH24H_RFwXohxseoIs3b$$aoTh0Ml1-S1QbREXDte1N"
+  }, {
+    "id" : "xeFDfSs5eYcH_WnCC3STx$$eBw2vbyxYsmVDq3mQRc8p",
+    "source" : "R1s9kBdlO6U2ilWg32UY6$$Fk0ZBGn8hRFKmeQgZhxF9",
+    "sourcePort" : "nVE5guuagboWxxFBswTnh$$I8URe36XloZZ5efnVEiZk",
+    "target" : "Zf01TWfMi3bAgutsJvFHM$$ig5c5tqo7QWSU25ZVVJSo",
+    "targetPort" : "fakN3mh-ObgjAHgwbWFgN$$jckMB5r1UH3sOZN0Cz0o3"
+  }, {
+    "id" : "1i12dtJmRu-KQSnz3p3iN$$PWfXqb67hKFVd4e6w-aPc",
+    "source" : "kAf8JGYJNu8IAGmlega2B$$op0L6-ykrU4Obu-0vJgU3",
+    "sourcePort" : "7AJXUVogNJAmRyvXgHzYY$$D9V-zfF_hzA1KYQ0cls56",
+    "target" : "MAH7LYyl44ptmhaNg3Q0n$$Yo4f7d5jE9ik9nGA6iaaq",
+    "targetPort" : "kBxds-UvZ6HJUyAipJQ8-$$UAwnkfgQeuTlqod498lRM"
+  }, {
+    "id" : "z9t4C7kyvwG5m8OikJjAf",
+    "source" : "Zf01TWfMi3bAgutsJvFHM$$ig5c5tqo7QWSU25ZVVJSo",
+    "sourcePort" : "CiTDEmlavuLSRPFrhP9ox$$JvlHpbIlfrZeSblD3xHGi",
+    "target" : "kAf8JGYJNu8IAGmlega2B$$op0L6-ykrU4Obu-0vJgU3",
+    "targetPort" : "PY7VNlGvKUm2eL8O6oijS$$KIPo5TOKXdNj7H7FbVRVp"
   } ],
   "processes" : {
     "NeGa1g8aINafllr_7flj8$$RsqUPI7BQ_Pky12DO09ul" : {
@@ -120,7 +150,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Loads customer claim data from a specified file, enabling analysis of claims and associated details.",
+        "comment" : "Loads customer claim data from a specified file, enabling analysis of claims and associated details for better decision-making.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -143,13 +173,13 @@
       "metadata" : {
         "label" : "batch_lookup_creation",
         "slug" : "batch_lookup_creation",
-        "x" : -1960,
-        "y" : -940,
+        "x" : -1640,
+        "y" : -1060,
         "phase" : -1,
         "cache" : true,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Creates a lookup table for batch processing, enhancing tracking and management of batch statuses.",
+        "comment" : "Creates a lookup table for batch processing, enhancing data retrieval efficiency for future operations.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -159,47 +189,20 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
+              "name" : "last_batch",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
               "name" : "batchid",
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The unique identifier for the control batch",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "insertdate",
-              "type" : "timestamp",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The date when the batch was inserted into the system",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "status",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The current status of the batch",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "process",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The specific process or operation associated with the batch",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "batch_status_check",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Status check result for the batch",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -215,8 +218,8 @@
       "properties" : {
         "isRange" : false,
         "processName" : "batch_lookup",
-        "keyColumns" : [ "batchid" ],
-        "valueColumns" : [ "status", "process", "batch_status_check", "batchid" ]
+        "keyColumns" : [ "last_batch" ],
+        "valueColumns" : [ "batchid" ]
       }
     },
     "uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c" : {
@@ -225,7 +228,7 @@
       "metadata" : {
         "label" : "landing_customer1_claim",
         "slug" : "landing_customer1_claim",
-        "x" : -1740,
+        "x" : -1720,
         "y" : -660,
         "phase" : 0,
         "cache" : false,
@@ -245,13 +248,13 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The unique identifier for the control batch",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "ClaimNumber",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -332,7 +335,7 @@
               }
             }, {
               "name" : "DateOfInjury",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -341,7 +344,7 @@
               }
             }, {
               "name" : "DateOfClaim",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -359,7 +362,7 @@
               }
             }, {
               "name" : "ClaimAmount",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -413,7 +416,7 @@
               }
             }, {
               "name" : "EmployerZip",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -667,6 +670,217 @@
         "datasetId" : "datasets/customer1_claim"
       }
     },
+    "MAH7LYyl44ptmhaNg3Q0n$$Yo4f7d5jE9ik9nGA6iaaq" : {
+      "id" : "MAH7LYyl44ptmhaNg3Q0n$$Yo4f7d5jE9ik9nGA6iaaq",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "select_batch_id",
+        "slug" : "select_batch_id",
+        "x" : -1980,
+        "y" : -1000,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Prepares a new batch record by incrementing the batch ID and adding a timestamp for tracking purposes.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "kBxds-UvZ6HJUyAipJQ8-$$UAwnkfgQeuTlqod498lRM",
+          "slug" : "batch",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "batchid",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "insertdate",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The current status of the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "process",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The specific process or operation associated with the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "batch_status_check",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Status check result for the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "lyKD_e0nBfp_HNVYLCFcW$$rDTL-USVV-3nIXnKA4qJW",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "batchid",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "batchid+1"
+          },
+          "description" : ""
+        }, {
+          "target" : "insertdate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "current_timestamp()"
+          },
+          "description" : ""
+        }, {
+          "target" : "status",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "status"
+          },
+          "description" : ""
+        }, {
+          "target" : "process",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "process"
+          },
+          "description" : ""
+        }, {
+          "target" : "batch_status_check",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "batch_status_check"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "kAf8JGYJNu8IAGmlega2B$$op0L6-ykrU4Obu-0vJgU3" : {
+      "id" : "kAf8JGYJNu8IAGmlega2B$$op0L6-ykrU4Obu-0vJgU3",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "limit_to_one",
+        "slug" : "limit_to_one",
+        "x" : -2120,
+        "y" : -1000,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Retrieves a single record from the dataset.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PY7VNlGvKUm2eL8O6oijS$$KIPo5TOKXdNj7H7FbVRVp",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "batchid",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "insertdate",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The current status of the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "process",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The specific process or operation associated with the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "batch_status_check",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Status check result for the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "7AJXUVogNJAmRyvXgHzYY$$D9V-zfF_hzA1KYQ0cls56",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "limit" : "1"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Limit",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
     "x6zov8W87uDsW03ihJP5a$$usyVsqHhM32S2AWVIe8Ep" : {
       "id" : "x6zov8W87uDsW03ihJP5a$$usyVsqHhM32S2AWVIe8Ep",
       "component" : "Source",
@@ -696,14 +910,184 @@
         "datasetId" : "datasets/customer1_mapping"
       }
     },
+    "MkUPJGMFHo-UprHnZGu7W$$96PO3NO-XBcnbC9TEOVdP" : {
+      "id" : "MkUPJGMFHo-UprHnZGu7W$$96PO3NO-XBcnbC9TEOVdP",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "update_control_batch",
+        "slug" : "update_control_batch",
+        "x" : -1760,
+        "y" : -920,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6TQrmLpb13TzDeaoil1UF$$YegMFtUDlj84hdlEta4MB",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "batchid",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "insertdate",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The current status of the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "process",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The specific process or operation associated with the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "batch_status_check",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Status check result for the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/update_control_batch"
+      }
+    },
+    "Zf01TWfMi3bAgutsJvFHM$$ig5c5tqo7QWSU25ZVVJSo" : {
+      "id" : "Zf01TWfMi3bAgutsJvFHM$$ig5c5tqo7QWSU25ZVVJSo",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "by_batchid_desc",
+        "slug" : "by_batchid_desc",
+        "x" : -2260,
+        "y" : -1000,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Sorts control batches by their identifiers in descending order.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "fakN3mh-ObgjAHgwbWFgN$$jckMB5r1UH3sOZN0Cz0o3",
+          "slug" : "control_batch",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "batchid",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "insertdate",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The current status of the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "process",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The specific process or operation associated with the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "batch_status_check",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Status check result for the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "CiTDEmlavuLSRPFrhP9ox$$JvlHpbIlfrZeSblD3xHGi",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "fakN3mh-ObgjAHgwbWFgN$$jckMB5r1UH3sOZN0Cz0o3##batchid" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "batchid"
+          },
+          "sortType" : "desc"
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/OrderBy",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
     "R1s9kBdlO6U2ilWg32UY6$$Fk0ZBGn8hRFKmeQgZhxF9" : {
       "id" : "R1s9kBdlO6U2ilWg32UY6$$Fk0ZBGn8hRFKmeQgZhxF9",
       "component" : "Source",
       "metadata" : {
-        "label" : "batch",
-        "slug" : "batch",
-        "x" : -2140,
-        "y" : -940,
+        "label" : "control_batch",
+        "slug" : "control_batch",
+        "x" : -2420,
+        "y" : -1000,
         "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
@@ -737,7 +1121,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Reformats and organizes claim data for better clarity and accessibility, ensuring all relevant details are easily retrievable.",
+        "comment" : "Reformats and organizes claim data for better clarity and accessibility, ensuring all relevant details are included for processing.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -748,7 +1132,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "ClaimNumber",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -829,7 +1213,7 @@
               }
             }, {
               "name" : "DateOfInjury",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -838,7 +1222,7 @@
               }
             }, {
               "name" : "DateOfClaim",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -856,7 +1240,7 @@
               }
             }, {
               "name" : "ClaimAmount",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -910,7 +1294,7 @@
               }
             }, {
               "name" : "EmployerZip",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1169,7 +1553,7 @@
           "target" : "BatchID",
           "expression" : {
             "format" : "sql",
-            "expression" : "batch_lookup(19)['batchid']"
+            "expression" : "batch_lookup('last')['batchid']"
           },
           "description" : ""
         }, {
@@ -1490,7 +1874,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfInjury", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantMI", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentDate", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimDescription", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityEnd", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BenefitAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##SourceRecordID", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimStatus", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantSSN", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfClaim", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantLastName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Nature", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityStart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BodyPart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimNumber", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##InsuranceType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantFirstName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Cause", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterEmail" ]
+        "columnsSelector" : [ "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##InsuranceType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentDate", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfInjury", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantSSN", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BodyPart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Nature", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantFirstName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityStart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityEnd", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##SourceRecordID", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfClaim", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimNumber", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantLastName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Cause", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimStatus", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BenefitAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimDescription", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantMI", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerAddress" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -1520,7 +1904,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "CLAIM_NUMBER",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "Unique identifier for the claim",
@@ -1601,7 +1985,7 @@
               }
             }, {
               "name" : "DATE_OF_INJURY",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "Date when the injury occurred",
@@ -1610,7 +1994,7 @@
               }
             }, {
               "name" : "DATE_OF_CLAIM",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "Date when the claim was filed",
@@ -1628,7 +2012,7 @@
               }
             }, {
               "name" : "CLAIM_AMOUNT",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "The amount claimed by the customer",
@@ -1682,7 +2066,7 @@
               }
             }, {
               "name" : "EMPLOYER_POSTAL_CODE",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "Postal code of the employer's address",
@@ -1969,7 +2353,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "ClaimNumber",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -2050,7 +2434,7 @@
               }
             }, {
               "name" : "DateOfInjury",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -2059,7 +2443,7 @@
               }
             }, {
               "name" : "DateOfClaim",
-              "type" : "date",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -2077,7 +2461,7 @@
               }
             }, {
               "name" : "ClaimAmount",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -2131,7 +2515,7 @@
               }
             }, {
               "name" : "EmployerZip",
-              "type" : "integer",
+              "type" : "string",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -2384,6 +2768,110 @@
         "script" : "# Extract the renaming mappings from rename_col\nrename_mappings = {row['SourceColumn']: row['TargetColumn'] for row in rename_col.collect()}\n\n# Rename columns in out0 based on the mappings\nout0 = data.withColumnsRenamed(rename_mappings)",
         "scriptMethodHeader" : "def Script(spark: SparkSession, data: DataFrame, rename_col: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "Gy2e0gm6X-MQtYECM8DWP$$6leuTfTb-AVkw5DcoUfw7" : {
+      "id" : "Gy2e0gm6X-MQtYECM8DWP$$6leuTfTb-AVkw5DcoUfw7",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "last_batch_projection",
+        "slug" : "last_batch_projection",
+        "x" : -1840,
+        "y" : -1060,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Labels the latest batch of data for tracking and analysis.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "0sREF2DmbQBlxm5PRFMa7$$n7dBPPj1LOGzRY2p3jfYV",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "batchid",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "insertdate",
+              "type" : "timestamp",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The current status of the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "process",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The specific process or operation associated with the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "batch_status_check",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Status check result for the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "Od7vN81Kad-sXr5pC4CEr$$nZak_Yz2V0KA2n_uN0dag",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "last_batch",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "'last'"
+          },
+          "description" : ""
+        }, {
+          "target" : "batchid",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "batchid"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     }
   },

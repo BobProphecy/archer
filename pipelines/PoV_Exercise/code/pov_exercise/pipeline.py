@@ -7,13 +7,18 @@ from prophecy.utils import *
 from pov_exercise.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_batch = batch(spark)
-    batch_lookup_creation(spark, df_batch)
+    df_control_batch = control_batch(spark)
+    df_by_batchid_desc = by_batchid_desc(spark, df_control_batch)
+    df_limit_to_one = limit_to_one(spark, df_by_batchid_desc)
+    df_select_batch_id = select_batch_id(spark, df_limit_to_one)
+    df_last_batch_projection = last_batch_projection(spark, df_select_batch_id)
+    batch_lookup_creation(spark, df_last_batch_projection)
     df_customer_claim_file = customer_claim_file(spark)
     df_customer1_mapping = customer1_mapping(spark)
     df_rename_columns = rename_columns(spark, df_customer_claim_file, df_customer1_mapping)
     df_reformatted_claim_data = reformatted_claim_data(spark, df_rename_columns)
     landing_customer1_claim(spark, df_reformatted_claim_data)
+    update_control_batch(spark, df_select_batch_id)
 
 def main():
     spark = SparkSession.builder\

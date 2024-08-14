@@ -6,7 +6,5 @@ from prophecy.libs import typed_lit
 from pov_exercise.config.ConfigStore import *
 from pov_exercise.functions import *
 
-def batch_lookup_creation(spark: SparkSession, batch: DataFrame):
-    keyColumns = ['''last_batch''']
-    valueColumns = ['''batchid''']
-    createLookup("batch_lookup", batch, spark, keyColumns, valueColumns)
+def limit_to_one(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.limit(1)

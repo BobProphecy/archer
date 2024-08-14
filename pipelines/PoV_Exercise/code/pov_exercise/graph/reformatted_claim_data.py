@@ -8,7 +8,7 @@ from pov_exercise.functions import *
 
 def reformatted_claim_data(spark: SparkSession, rename_columns: DataFrame) -> DataFrame:
     return rename_columns.select(
-        lookup("batch_lookup", lit(19)).getField("batchid").alias("BatchID"), 
+        lookup("batch_lookup", lit("last")).getField("batchid").alias("BatchID"), 
         col("ClaimNumber"), 
         col("SourceRecordID"), 
         col("InsuranceType"), 

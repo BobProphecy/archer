@@ -65,6 +65,7 @@ pipelines:
       - datasets/customer_claim_file
       outputs:
       - datasets/customer1_claim
+      - datasets/update_control_batch
     subgraphs: []
     dependencies: {}
   pipelines/PoV_Exercise_ntong:
@@ -451,6 +452,19 @@ datasets:
         description: ''
         author: bobw@prophecy.io
         createdAt: '2024-08-12 20:21:02'
+  datasets/update_control_batch:
+    name: update_control_batch
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-08-14 18:35:37'
+    mode: batch
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: Database
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-08-14 18:35:37'
 templates: {}
 jobs:
   jobs/JobTest1:
