@@ -9,9 +9,8 @@ from pov_exercise_basic.graph import *
 def pipeline(spark: SparkSession) -> None:
     df_batch = batch(spark)
     df_customer_claim_file = customer_claim_file(spark)
-    df_select_claimant_name = select_claimant_name(spark, df_customer_claim_file)
     batch_lookup_creation(spark, df_batch)
-    landing_customer1_claim(spark, df_select_claimant_name)
+    landing_customer1_claim(spark)
 
 def main():
     spark = SparkSession.builder\

@@ -10,9 +10,10 @@ def pipeline(spark: SparkSession) -> None:
     df_batch = batch(spark)
     batch_lookup_creation(spark, df_batch)
     df_customer_claim_file = customer_claim_file(spark)
-    landing_customer1_claim(spark)
     df_customer1_mapping = customer1_mapping(spark)
     df_rename_columns = rename_columns(spark, df_customer_claim_file, df_customer1_mapping)
+    df_reformatted_claim_data = reformatted_claim_data(spark, df_rename_columns)
+    landing_customer1_claim(spark, df_reformatted_claim_data)
 
 def main():
     spark = SparkSession.builder\

@@ -94,6 +94,18 @@
     "sourcePort" : "yDmWK95g4zibnxCSVLpYN$$ObFEohr3ZPJgP5zPFjjM9",
     "target" : "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu",
     "targetPort" : "0amb1ARxSm9kABlIT8laE$$SirDELDtT4Oad5cOEmI8M"
+  }, {
+    "id" : "p476JMh_bquyAcZWtsEx-$$dXjMytLt725D9asXZ_bpR",
+    "source" : "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu",
+    "sourcePort" : "y74kG5mNDvh4o9puDT-Jp$$VhtkC2d5gFPWGVNIz3LWj",
+    "target" : "KtCFdkmlolHuhMqJ_xblq$$CkyzkWJypt9D6M817bQQY",
+    "targetPort" : "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n"
+  }, {
+    "id" : "1R0OO--29L9lud2xN28Iz",
+    "source" : "KtCFdkmlolHuhMqJ_xblq$$CkyzkWJypt9D6M817bQQY",
+    "sourcePort" : "AIXfAsjw4j-J__d8jBZm6$$xGzE2P8tRU9iWXLhqP_-A",
+    "target" : "uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c",
+    "targetPort" : "VPH24H_RFwXohxseoIs3b$$aoTh0Ml1-S1QbREXDte1N"
   } ],
   "processes" : {
     "NeGa1g8aINafllr_7flj8$$RsqUPI7BQ_Pky12DO09ul" : {
@@ -131,13 +143,13 @@
       "metadata" : {
         "label" : "batch_lookup_creation",
         "slug" : "batch_lookup_creation",
-        "x" : -2220,
-        "y" : -1000,
+        "x" : -1960,
+        "y" : -940,
         "phase" : -1,
         "cache" : true,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Creates a lookup table for batch processing, enabling efficient tracking of batch statuses and processes.",
+        "comment" : "Creates a lookup table for batch processing, enhancing tracking and management of batch statuses.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -203,7 +215,7 @@
       "properties" : {
         "isRange" : false,
         "processName" : "batch_lookup",
-        "keyColumns" : [ "insertdate" ],
+        "keyColumns" : [ "batchid" ],
         "valueColumns" : [ "status", "process", "batch_status_check", "batchid" ]
       }
     },
@@ -213,8 +225,8 @@
       "metadata" : {
         "label" : "landing_customer1_claim",
         "slug" : "landing_customer1_claim",
-        "x" : -1520,
-        "y" : -880,
+        "x" : -1740,
+        "y" : -660,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -223,7 +235,426 @@
       "ports" : {
         "inputs" : [ {
           "id" : "VPH24H_RFwXohxseoIs3b$$aoTh0Ml1-S1QbREXDte1N",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "BatchID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The unique identifier for the control batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimNumber",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SourceRecordID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "InsuranceType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantFirstName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantMI",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantLastName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimDescription",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantSSN",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateOfInjury",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateOfClaim",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimStatus",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimAmount",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerZip",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AdjusterName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AdjusterPhone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AdjusterEmail",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DoctorName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DoctorPhone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DoctorEmail",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalZip",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TreatmentDate",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TreatmentType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DisabilityType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DisabilityStart",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DisabilityEnd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BenefitAmount",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantPhone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantEmail",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantZip",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BodyPart",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Nature",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Cause",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
@@ -240,7 +671,7 @@
       "metadata" : {
         "label" : "customer1_mapping",
         "slug" : "customer1_mapping",
-        "x" : -2320,
+        "x" : -2340,
         "y" : -580,
         "phase" : 0,
         "cache" : false,
@@ -267,8 +698,8 @@
       "metadata" : {
         "label" : "batch",
         "slug" : "batch",
-        "x" : -2400,
-        "y" : -1000,
+        "x" : -2140,
+        "y" : -940,
         "phase" : -1,
         "cache" : false,
         "detailedStats" : false,
@@ -290,6 +721,778 @@
         "datasetId" : "datasets/control_batch"
       }
     },
+    "KtCFdkmlolHuhMqJ_xblq$$CkyzkWJypt9D6M817bQQY" : {
+      "id" : "KtCFdkmlolHuhMqJ_xblq$$CkyzkWJypt9D6M817bQQY",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "reformatted_claim_data",
+        "slug" : "reformatted_claim_data",
+        "x" : -1920,
+        "y" : -660,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Reformats and organizes claim data for better clarity and accessibility, ensuring important details are easily retrievable.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n",
+          "slug" : "rename_columns",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "ClaimNumber",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SourceRecordID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "InsuranceType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantFirstName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantMI",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantLastName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimDescription",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantSSN",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateOfInjury",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateOfClaim",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimStatus",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimAmount",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerZip",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AdjusterName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AdjusterPhone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AdjusterEmail",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DoctorName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DoctorPhone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DoctorEmail",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalZip",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TreatmentDate",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TreatmentType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DisabilityType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DisabilityStart",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DisabilityEnd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BenefitAmount",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantPhone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantEmail",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantZip",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BodyPart",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Nature",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Cause",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "AIXfAsjw4j-J__d8jBZm6$$xGzE2P8tRU9iWXLhqP_-A",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "BatchID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "batch_lookup(19)['batchid']"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimNumber",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimNumber"
+          },
+          "description" : ""
+        }, {
+          "target" : "SourceRecordID",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "SourceRecordID"
+          },
+          "description" : ""
+        }, {
+          "target" : "InsuranceType",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "InsuranceType"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantFirstName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantFirstName"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantMI",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantMI"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantLastName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantLastName"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantName"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimDescription",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimDescription"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantSSN",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantSSN"
+          },
+          "description" : ""
+        }, {
+          "target" : "DateOfInjury",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "DateOfInjury"
+          },
+          "description" : ""
+        }, {
+          "target" : "DateOfClaim",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "DateOfClaim"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimStatus",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimStatus"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimAmount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimAmount"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimType",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimType"
+          },
+          "description" : ""
+        }, {
+          "target" : "EmployerName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EmployerName"
+          },
+          "description" : ""
+        }, {
+          "target" : "EmployerAddress",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EmployerAddress"
+          },
+          "description" : ""
+        }, {
+          "target" : "EmployerCity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EmployerCity"
+          },
+          "description" : ""
+        }, {
+          "target" : "EmployerState",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EmployerState"
+          },
+          "description" : ""
+        }, {
+          "target" : "EmployerZip",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "EmployerZip"
+          },
+          "description" : ""
+        }, {
+          "target" : "AdjusterName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "AdjusterName"
+          },
+          "description" : ""
+        }, {
+          "target" : "AdjusterPhone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "AdjusterPhone"
+          },
+          "description" : ""
+        }, {
+          "target" : "AdjusterEmail",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "AdjusterEmail"
+          },
+          "description" : ""
+        }, {
+          "target" : "DoctorName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "DoctorName"
+          },
+          "description" : ""
+        }, {
+          "target" : "DoctorPhone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "DoctorPhone"
+          },
+          "description" : ""
+        }, {
+          "target" : "DoctorEmail",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "DoctorEmail"
+          },
+          "description" : ""
+        }, {
+          "target" : "HospitalName",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "HospitalName"
+          },
+          "description" : ""
+        }, {
+          "target" : "HospitalAddress",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "HospitalAddress"
+          },
+          "description" : ""
+        }, {
+          "target" : "HospitalCity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "HospitalCity"
+          },
+          "description" : ""
+        }, {
+          "target" : "HospitalState",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "HospitalState"
+          },
+          "description" : ""
+        }, {
+          "target" : "HospitalZip",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "HospitalZip"
+          },
+          "description" : ""
+        }, {
+          "target" : "TreatmentDate",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "TreatmentDate"
+          },
+          "description" : ""
+        }, {
+          "target" : "TreatmentType",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "TreatmentType"
+          },
+          "description" : ""
+        }, {
+          "target" : "DisabilityType",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "DisabilityType"
+          },
+          "description" : ""
+        }, {
+          "target" : "DisabilityStart",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "DisabilityStart"
+          },
+          "description" : ""
+        }, {
+          "target" : "DisabilityEnd",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "DisabilityEnd"
+          },
+          "description" : ""
+        }, {
+          "target" : "BenefitAmount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BenefitAmount"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantPhone",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantPhone"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantEmail",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantEmail"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantAddress",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantAddress"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantCity",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantCity"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantState",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantState"
+          },
+          "description" : ""
+        }, {
+          "target" : "ClaimantZip",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "ClaimantZip"
+          },
+          "description" : ""
+        }, {
+          "target" : "BodyPart",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "BodyPart"
+          },
+          "description" : ""
+        }, {
+          "target" : "Nature",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Nature"
+          },
+          "description" : ""
+        }, {
+          "target" : "Cause",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Cause"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfClaim", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantMI", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BenefitAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantFirstName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityStart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##InsuranceType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantLastName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimDescription", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityEnd", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##SourceRecordID", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Nature", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Cause", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantSSN", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimNumber", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfInjury", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimStatus", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentDate", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BodyPart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorPhone" ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
     "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu" : {
       "id" : "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu",
       "component" : "Script",
@@ -302,13 +1505,13 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Updates column names in a dataset to align with a specified naming convention, enhancing data clarity and usability.",
+        "comment" : "Updates column names in a dataset to match a specified format, enhancing data clarity and usability.",
         "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
           "id" : "-dyUO90VK0FUkXAtk3rDE$$WMicL0Nkg4mFd4vdrmixU",
-          "slug" : "in0",
+          "slug" : "data",
           "schema" : {
             "type" : "struct",
             "fields" : [ {
@@ -721,7 +1924,7 @@
           "isStreaming" : false
         }, {
           "id" : "0amb1ARxSm9kABlIT8laE$$SirDELDtT4Oad5cOEmI8M",
-          "slug" : "in1",
+          "slug" : "rename_col",
           "schema" : {
             "type" : "struct",
             "fields" : [ {
@@ -760,7 +1963,412 @@
           "slug" : "out0",
           "schema" : {
             "type" : "struct",
-            "fields" : [ ]
+            "fields" : [ {
+              "name" : "ClaimNumber",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "SourceRecordID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "InsuranceType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantFirstName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantMI",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantLastName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimDescription",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantSSN",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateOfInjury",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DateOfClaim",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimStatus",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimAmount",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "EmployerZip",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AdjusterName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AdjusterPhone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "AdjusterEmail",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DoctorName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DoctorPhone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DoctorEmail",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalName",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "HospitalZip",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TreatmentDate",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "TreatmentType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DisabilityType",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DisabilityStart",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "DisabilityEnd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BenefitAmount",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantPhone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantEmail",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantAddress",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantCity",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantState",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "ClaimantZip",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "BodyPart",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Nature",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Cause",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
           },
           "isStreaming" : false
         } ],
@@ -770,7 +2378,7 @@
       },
       "properties" : {
         "script" : "# Extract the renaming mappings from rename_col\nrename_mappings = {row['SourceColumn']: row['TargetColumn'] for row in rename_col.collect()}\n\n# Rename columns in out0 based on the mappings\nout0 = data.withColumnsRenamed(rename_mappings)",
-        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame, in1: DataFrame) -> DataFrame:",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, data: DataFrame, rename_col: DataFrame) -> DataFrame:",
         "scriptMethodFooter" : "    return out0"
       }
     }
@@ -781,39 +2389,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Please connect input port in0",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
-    "property" : "$.workflow.processes.U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu.ports.outputs",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 3,
-    "message" : "Please infer output schema from the cluster as described [here](https://docs.prophecy.io/low-code-spark/gems/custom/script/)",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 2
-  } ]
+  }
 }

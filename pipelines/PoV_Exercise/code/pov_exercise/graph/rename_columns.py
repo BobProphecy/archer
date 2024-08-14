@@ -6,7 +6,7 @@ from prophecy.libs import typed_lit
 from pov_exercise.config.ConfigStore import *
 from pov_exercise.functions import *
 
-def rename_columns(spark: SparkSession, in0: DataFrame, in1: DataFrame) -> DataFrame:
+def rename_columns(spark: SparkSession, data: DataFrame, rename_col: DataFrame) -> DataFrame:
     # Extract the renaming mappings from rename_col
     rename_mappings = {row['SourceColumn']: row['TargetColumn'] for row in rename_col\
                             .collect(
