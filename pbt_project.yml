@@ -49,7 +49,10 @@ pipelines:
     dependencies: {}
   pipelines/PoV_Exercise:
     name: PoV_Exercise
-    description: ''
+    description: Processes customer claim data by reading from various sources, creating
+      a lookup for batch information, and mapping columns to standardized names. It
+      reformats the claim data and writes the final output to a designated landing
+      table for further analysis.
     author: bobw@prophecy.io
     mode: batch
     artefactID: ''

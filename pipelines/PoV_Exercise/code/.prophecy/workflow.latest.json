@@ -120,7 +120,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Reads and processes a customer claim file, extracting relevant information such as claim details, customer information, and medical treatment records.",
+        "comment" : "Loads customer claim data from a specified file, enabling analysis of claims and associated details.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -230,7 +230,9 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Stores customer claims data in a structured format for future analysis and reporting.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
@@ -676,7 +678,9 @@
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Loads customer mapping data from a specified file, enabling the alignment of source and target customer information for better data management.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ ],
@@ -733,7 +737,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Reformats and organizes claim data for better clarity and accessibility, ensuring important details are easily retrievable.",
+        "comment" : "Reformats and organizes claim data for better clarity and accessibility, ensuring all relevant details are easily retrievable.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -1486,7 +1490,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfClaim", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantMI", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BenefitAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantFirstName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityStart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##InsuranceType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantLastName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimDescription", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityEnd", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##SourceRecordID", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Nature", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Cause", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantSSN", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimNumber", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfInjury", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimStatus", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentDate", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BodyPart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorPhone" ]
+        "columnsSelector" : [ "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfInjury", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantMI", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentDate", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimDescription", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityEnd", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BenefitAmount", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##TreatmentType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##SourceRecordID", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantZip", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimStatus", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantSSN", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterPhone", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DateOfClaim", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantLastName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Nature", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalState", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DisabilityStart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##DoctorEmail", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerAddress", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##BodyPart", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##EmployerCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimNumber", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##InsuranceType", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##HospitalCity", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantFirstName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##Cause", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##ClaimantName", "X6U8tCFmc65L5wNRt090D$$m-kuq5XsOWWpOo7_Okh9n##AdjusterEmail" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -1505,7 +1509,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Updates column names in a dataset to match a specified format, enhancing data clarity and usability.",
+        "comment" : "Updates column names in a dataset to align with a specified naming convention, enhancing data clarity and usability.",
         "autoUpdateComment" : true
       },
       "ports" : {
