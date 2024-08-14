@@ -12,7 +12,7 @@
       }
     },
     "id" : "1",
-    "uri" : "pipelines/PoV_Exercise",
+    "uri" : "pipelines/PoV_Exercise_Orchestrate",
     "pipelineSettingsInfo" : {
       "applicationName" : "PoV_Exercise",
       "hasApplication" : true,
@@ -73,7 +73,7 @@
       "enabled" : false,
       "value" : 1000
     },
-    "topLevelPackage" : "pov_exercise",
+    "topLevelPackage" : "pov_exercise_orchestrate",
     "configurationVersion" : "v2"
   },
   "connections" : [ {
@@ -682,7 +682,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Prepares a new batch of data for processing by updating the batch ID and adding metadata for tracking purposes.",
+        "comment" : "Prepares and updates batch records for a claim ingestion process, ensuring each batch is correctly identified and timestamped.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -775,7 +775,7 @@
           "target" : "process",
           "expression" : {
             "format" : "sql",
-            "expression" : "\"Prophecy-Sample Claim Ingestion Process\""
+            "expression" : "\"ProphecyJOB-Sample Claim Ingestion Process\""
           },
           "description" : ""
         }, {
