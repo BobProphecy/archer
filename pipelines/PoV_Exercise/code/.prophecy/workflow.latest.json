@@ -682,7 +682,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Prepares a new batch record by incrementing the batch ID and adding a timestamp for tracking purposes.",
+        "comment" : "Prepares a new batch of data for processing by updating the batch ID and adding metadata for tracking purposes.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -696,16 +696,16 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The unique identifier for the control batch",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "insertdate",
               "type" : "timestamp",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The date when the batch was inserted into the system",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -775,7 +775,7 @@
           "target" : "process",
           "expression" : {
             "format" : "sql",
-            "expression" : "process"
+            "expression" : "\"Prophecy-Sample Claim Ingestion Process\""
           },
           "description" : ""
         }, {
@@ -788,7 +788,7 @@
         } ],
         "importString" : "",
         "activeTab" : "expressions",
-        "columnsSelector" : [ ]
+        "columnsSelector" : [ "kBxds-UvZ6HJUyAipJQ8-$$UAwnkfgQeuTlqod498lRM##status", "kBxds-UvZ6HJUyAipJQ8-$$UAwnkfgQeuTlqod498lRM##batchid", "kBxds-UvZ6HJUyAipJQ8-$$UAwnkfgQeuTlqod498lRM##batch_status_check" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
@@ -821,16 +821,16 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The unique identifier for the control batch",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "insertdate",
               "type" : "timestamp",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The date when the batch was inserted into the system",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -959,9 +959,9 @@
             }, {
               "name" : "process",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "The specific process or operation associated with the batch",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1013,16 +1013,16 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The unique identifier for the control batch",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "insertdate",
               "type" : "timestamp",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The date when the batch was inserted into the system",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2821,9 +2821,9 @@
             }, {
               "name" : "process",
               "type" : "string",
-              "nullable" : true,
+              "nullable" : false,
               "metadata" : {
-                "description" : "The specific process or operation associated with the batch",
+                "description" : "",
                 "mappings" : [ ],
                 "tags" : [ ]
               }

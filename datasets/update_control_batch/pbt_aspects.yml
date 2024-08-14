@@ -25,9 +25,9 @@ schema:
       tags: []
   - name: process
     type: string
-    nullable: true
+    nullable: false
     metadata:
-      description: The specific process or operation associated with the batch
+      description: ''
       mappings: []
       tags: []
   - name: batch_status_check

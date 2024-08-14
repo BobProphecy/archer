@@ -11,6 +11,6 @@ def select_batch_id(spark: SparkSession, batch: DataFrame) -> DataFrame:
         (col("batchid") + lit(1)).alias("batchid"), 
         current_timestamp().alias("insertdate"), 
         col("status"), 
-        col("process"), 
+        lit("Prophecy-Sample Claim Ingestion Process").alias("process"), 
         col("batch_status_check")
     )

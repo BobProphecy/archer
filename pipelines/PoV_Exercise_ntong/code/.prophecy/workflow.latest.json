@@ -923,16 +923,16 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The unique identifier for the control batch",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "insertdate",
               "type" : "timestamp",
-              "nullable" : false,
+              "nullable" : true,
               "metadata" : {
-                "description" : "",
+                "description" : "The date when the batch was inserted into the system",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
