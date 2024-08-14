@@ -477,15 +477,22 @@ dependencies:
 - type: plibMaven
   modifiedAt: '2024-08-08T20:17:13.057723Z'
   name: plibMaven
-  version: 8.0.29
+  version: 8.0.31
   id: '1218097084'
   createdAt: '2024-08-08T20:17:13.057577Z'
+  enabled: true
+  entity: Project
 - type: plibPypi
-  modifiedAt: '2024-08-08T20:17:13.057954Z'
-  name: plibPypi
+  modifiedAt: '2024-08-14T14:56:52.435Z'
+  name: ProphecyLibsPython
   version: 1.9.9
   id: '1326775046'
   createdAt: '2024-08-08T20:17:13.057862Z'
+  enabled: true
+  entity: Project
+  description: Default dependency for Prophecy Libs
+  scope: Project
+  editable: true
 projectDependencies:
   '12654':
     projectUID: 12654
