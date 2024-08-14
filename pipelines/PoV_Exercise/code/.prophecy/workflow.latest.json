@@ -83,47 +83,17 @@
     "target" : "FFzmmmeWjMaUhpNeed4aQ$$ghEsSvQUjbDadbYfeM0BZ",
     "targetPort" : "kwBR4qKyNO9ttZ4ad13Ii$$jcUWixWEbukQx4olf68K3"
   }, {
-    "id" : "LSy7lQ9mnVbKGG1pMkFXg$$UGiGcU7gtgBAZM2bLhz5D",
+    "id" : "4MOLmbSWhHYuP3nclI7eC",
     "source" : "NeGa1g8aINafllr_7flj8$$RsqUPI7BQ_Pky12DO09ul",
     "sourcePort" : "HjGd8JyCeE77wWCOjoLRB$$bHX4tBXgqbnlzC3ctBzFc",
-    "target" : "0i7aNYqMMc5aZxJ5F_jM3$$Xz76XXdtG2FOA2kfIfx-O",
-    "targetPort" : "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ"
+    "target" : "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu",
+    "targetPort" : "-dyUO90VK0FUkXAtk3rDE$$WMicL0Nkg4mFd4vdrmixU"
   }, {
-    "id" : "hTF4vxqDd3zRihKuBXjkW$$bCvLwYdLLoL0LpKB_y4RR",
-    "source" : "mjXYLDRSF8Qi1Wrt5vjpK$$zZytO6rcs-MfM-1kZFfI1",
-    "sourcePort" : "vnjmNlaquqnXlNxFEkhDE$$MiKUV9tD_TtLhsPCDEo8i",
-    "target" : "Edzn9HezbpQ-1yKYqQmUj$$kgf7obnwTywyZZTzkKh1W",
-    "targetPort" : "ZX2g_Hx78APAIVZcbXc5h$$yyJXCgnJoye4-VAnJboCy"
-  }, {
-    "id" : "NgK3lSCmfDlrFRNdEjj0C",
-    "source" : "mjXYLDRSF8Qi1Wrt5vjpK$$zZytO6rcs-MfM-1kZFfI1",
-    "sourcePort" : "vnjmNlaquqnXlNxFEkhDE$$MiKUV9tD_TtLhsPCDEo8i",
-    "target" : "ha0dgFGTXUHz33X7a4jbd$$e3tRBsjV73I9cIrvZHinf",
-    "targetPort" : "Z9GnjWl-HRS9gTF6f4CcD$$LzJ8wni9TWbaWHC8i0bac"
-  }, {
-    "id" : "1M34Mqbv1v27ShLLP0jxE$$JD6jry0yXBh-P_MuGMlZg",
-    "source" : "ha0dgFGTXUHz33X7a4jbd$$e3tRBsjV73I9cIrvZHinf",
-    "sourcePort" : "mTCst5UK9tkpBdtsc_Eot$$d8OVBQ1NTVdRRZ0cz9dY2",
-    "target" : "9gAPfYdq_7QfcrteYruc6$$bCUHx8HnrlvgPdEycRGx8",
-    "targetPort" : "yTnoTPN88WqnrJkoojpeZ$$F0JpXM812HKNLbavHsEU6"
-  }, {
-    "id" : "sNAljqpT0X4RY5o_mTZDY$$aMuZR6c6EnVMPHS44-E1M",
-    "source" : "EcrLKecYlcasig1GDnZGS$$GJXC0QiutyjmRsz6TD9ox",
-    "sourcePort" : "6xfLzZvvkYkjy_Pfkslfr$$X7-xh6DXNcr8F3deN1zpY",
-    "target" : "fuM83XLVx59zlWS-O2pxG$$vSJtwGe-jyiWNK35Jy9GT",
-    "targetPort" : "p4i9fE5vRPTKT5Yl28ZBN$$XVsLYT3d4hHG95FYj5zbq"
-  }, {
-    "id" : "54nXJohqtkf_zEp9J68eS$$U75qovB0cspVKJk2aaVh5",
-    "source" : "vwHQNixBPrM3bbnRmO-JP$$bjLMDSmsHkW7IQM7qoUZD",
-    "sourcePort" : "UH4pS4Zh5PAVQwjhSxWxR$$4XHafMEGca7l-pczP1UWx",
-    "target" : "EcrLKecYlcasig1GDnZGS$$GJXC0QiutyjmRsz6TD9ox",
-    "targetPort" : "H1m6JQ-vt-pO9Dwxe5faU$$kaKxB7hjJJHalHYHKPgUw"
-  }, {
-    "id" : "Oi0CYGl1rkuKLIEDsyGim",
-    "source" : "Edzn9HezbpQ-1yKYqQmUj$$kgf7obnwTywyZZTzkKh1W",
-    "sourcePort" : "v9-ndASag4qiPjomoheqg$$_DWfYF5fCb4D9pXS5cFzp",
-    "target" : "vwHQNixBPrM3bbnRmO-JP$$bjLMDSmsHkW7IQM7qoUZD",
-    "targetPort" : "q7Mr4Edn0mfLjQn6ozMBr$$aV3c4lWkQJPSuvzMDa8k6"
+    "id" : "dNKdQsR2YBgMLvOgJGQBa",
+    "source" : "x6zov8W87uDsW03ihJP5a$$usyVsqHhM32S2AWVIe8Ep",
+    "sourcePort" : "yDmWK95g4zibnxCSVLpYN$$ObFEohr3ZPJgP5zPFjjM9",
+    "target" : "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu",
+    "targetPort" : "0amb1ARxSm9kABlIT8laE$$SirDELDtT4Oad5cOEmI8M"
   } ],
   "processes" : {
     "NeGa1g8aINafllr_7flj8$$RsqUPI7BQ_Pky12DO09ul" : {
@@ -132,8 +102,8 @@
       "metadata" : {
         "label" : "customer_claim_file",
         "slug" : "customer_claim_file",
-        "x" : -2180,
-        "y" : -880,
+        "x" : -2340,
+        "y" : -740,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -155,83 +125,69 @@
         "datasetId" : "datasets/customer_claim_file"
       }
     },
-    "EcrLKecYlcasig1GDnZGS$$GJXC0QiutyjmRsz6TD9ox" : {
-      "id" : "EcrLKecYlcasig1GDnZGS$$GJXC0QiutyjmRsz6TD9ox",
-      "component" : "Reformat",
+    "FFzmmmeWjMaUhpNeed4aQ$$ghEsSvQUjbDadbYfeM0BZ" : {
+      "id" : "FFzmmmeWjMaUhpNeed4aQ$$ghEsSvQUjbDadbYfeM0BZ",
+      "component" : "Lookup",
       "metadata" : {
-        "label" : "Reformat_2",
-        "slug" : "Reformat_2",
-        "x" : -1940,
-        "y" : -580,
-        "phase" : 0,
-        "cache" : false,
+        "label" : "batch_lookup_creation",
+        "slug" : "batch_lookup_creation",
+        "x" : -2220,
+        "y" : -1000,
+        "phase" : -1,
+        "cache" : true,
         "detailedStats" : false,
-        "isImported" : false
+        "isImported" : false,
+        "comment" : "Creates a lookup table for batch processing, enabling efficient tracking of batch statuses and processes.",
+        "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "H1m6JQ-vt-pO9Dwxe5faU$$kaKxB7hjJJHalHYHKPgUw",
-          "slug" : "pivot_target_column",
+          "id" : "kwBR4qKyNO9ttZ4ad13Ii$$jcUWixWEbukQx4olf68K3",
+          "slug" : "batch",
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "TargetColumn",
-              "type" : "string",
+              "name" : "batchid",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The column in the target dataset where data will be mapped.",
+                "description" : "The unique identifier for the control batch",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ {
-          "id" : "6xfLzZvvkYkjy_Pfkslfr$$X7-xh6DXNcr8F3deN1zpY",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
-        "expressions" : [ ],
-        "importString" : "",
-        "activeTab" : "expressions",
-        "columnsSelector" : [ ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
-    "fuM83XLVx59zlWS-O2pxG$$vSJtwGe-jyiWNK35Jy9GT" : {
-      "id" : "fuM83XLVx59zlWS-O2pxG$$vSJtwGe-jyiWNK35Jy9GT",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "stage_claim_table",
-        "slug" : "stage_claim_table",
-        "x" : -1760,
-        "y" : -680,
-        "phase" : -1,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "p4i9fE5vRPTKT5Yl28ZBN$$XVsLYT3d4hHG95FYj5zbq",
-          "slug" : "pivot_aggregation",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "TargetColumn",
+            }, {
+              "name" : "insertdate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The date when the batch was inserted into the system",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The current status of the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "process",
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The column in the target dataset where data will be mapped.",
+                "description" : "The specific process or operation associated with the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "batch_status_check",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Status check result for the batch",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -245,63 +201,56 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "datasetId" : "datasets/stage_claim_table"
+        "isRange" : false,
+        "processName" : "batch_lookup",
+        "keyColumns" : [ "insertdate" ],
+        "valueColumns" : [ "status", "process", "batch_status_check", "batchid" ]
       }
     },
-    "Edzn9HezbpQ-1yKYqQmUj$$kgf7obnwTywyZZTzkKh1W" : {
-      "id" : "Edzn9HezbpQ-1yKYqQmUj$$kgf7obnwTywyZZTzkKh1W",
-      "component" : "Aggregate",
+    "uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c" : {
+      "id" : "uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c",
+      "component" : "Target",
       "metadata" : {
-        "label" : "pivot_target_column",
-        "slug" : "pivot_target_column",
-        "x" : -2200,
+        "label" : "landing_customer1_claim",
+        "slug" : "landing_customer1_claim",
+        "x" : -1520,
+        "y" : -880,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "VPH24H_RFwXohxseoIs3b$$aoTh0Ml1-S1QbREXDte1N",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/customer1_claim"
+      }
+    },
+    "x6zov8W87uDsW03ihJP5a$$usyVsqHhM32S2AWVIe8Ep" : {
+      "id" : "x6zov8W87uDsW03ihJP5a$$usyVsqHhM32S2AWVIe8Ep",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customer1_mapping",
+        "slug" : "customer1_mapping",
+        "x" : -2320,
         "y" : -580,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "Transforms customer data to analyze different target categories, enabling better insights into customer segmentation.",
-        "autoUpdateComment" : true
+        "isImported" : false
       },
       "ports" : {
-        "inputs" : [ {
-          "id" : "ZX2g_Hx78APAIVZcbXc5h$$yyJXCgnJoye4-VAnJboCy",
-          "slug" : "customer1_mapping",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "Target",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The intended destination for data mapping.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "SourceColumn",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The name of the original column from the source data.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "TargetColumn",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The column in the target dataset where data will be mapped.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
+        "inputs" : [ ],
         "outputs" : [ {
-          "id" : "v9-ndASag4qiPjomoheqg$$_DWfYF5fCb4D9pXS5cFzp",
+          "id" : "yDmWK95g4zibnxCSVLpYN$$ObFEohr3ZPJgP5zPFjjM9",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -309,59 +258,57 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "allIns" : false,
-        "doPivot" : true,
-        "aggregate" : [ {
-          "target" : "TargetColumn",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "first(TargetColumn)"
-          },
-          "description" : "",
-          "_row_id" : null
-        } ],
-        "allowSelection" : true,
-        "pivotColumn" : {
-          "format" : "sql",
-          "expression" : "TargetColumn"
-        },
-        "pivotValues" : [ ],
-        "activeTab" : "groupBy",
-        "columnsSelector" : [ "ZX2g_Hx78APAIVZcbXc5h$$yyJXCgnJoye4-VAnJboCy##TargetColumn" ],
-        "groupBy" : [ {
-          "target" : "TargetColumn",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "TargetColumn"
-          },
-          "description" : "",
-          "_row_id" : null
-        } ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Aggregate",
-        "projectName" : "ProphecySparkBasicsPython"
+        "datasetId" : "datasets/customer1_mapping"
       }
     },
-    "0i7aNYqMMc5aZxJ5F_jM3$$Xz76XXdtG2FOA2kfIfx-O" : {
-      "id" : "0i7aNYqMMc5aZxJ5F_jM3$$Xz76XXdtG2FOA2kfIfx-O",
-      "component" : "Reformat",
+    "R1s9kBdlO6U2ilWg32UY6$$Fk0ZBGn8hRFKmeQgZhxF9" : {
+      "id" : "R1s9kBdlO6U2ilWg32UY6$$Fk0ZBGn8hRFKmeQgZhxF9",
+      "component" : "Source",
       "metadata" : {
-        "label" : "reformat_order_category",
-        "slug" : "reformat_order_category",
-        "x" : -2000,
-        "y" : -880,
+        "label" : "batch",
+        "slug" : "batch",
+        "x" : -2400,
+        "y" : -1000,
+        "phase" : -1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Retrieves batch data for further analysis or processing.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "nVE5guuagboWxxFBswTnh$$I8URe36XloZZ5efnVEiZk",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/control_batch"
+      }
+    },
+    "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu" : {
+      "id" : "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "rename_columns",
+        "slug" : "rename_columns",
+        "x" : -2080,
+        "y" : -660,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Reformats and organizes customer claim data for better clarity and accessibility.",
+        "comment" : "Updates column names in a dataset to align with a specified naming convention, enhancing data clarity and usability.",
         "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ",
-          "slug" : "customer_claim_file",
+          "id" : "-dyUO90VK0FUkXAtk3rDE$$WMicL0Nkg4mFd4vdrmixU",
+          "slug" : "in0",
           "schema" : {
             "type" : "struct",
             "fields" : [ {
@@ -772,450 +719,9 @@
             } ]
           },
           "isStreaming" : false
-        } ],
-        "outputs" : [ {
-          "id" : "QScaY7nizYCqNI6CSvIno$$l_qZGm9DJRZP58juMZ4IH",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
-        "expressions" : [ {
-          "target" : "BatchID",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "batch_lookup('2024-07-01T17:34:22.455Z')['batchid']"
-          },
-          "description" : ""
         }, {
-          "target" : "CLAIM_NUMBER",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIM_NUMBER"
-          },
-          "description" : ""
-        }, {
-          "target" : "SOURCE_RECORD_ID",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "SOURCE_RECORD_ID"
-          },
-          "description" : ""
-        }, {
-          "target" : "INSURANCE_TYPE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "INSURANCE_TYPE"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_FIRST_NAME",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_FIRST_NAME"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_MI",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_MI"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_LAST_NAME",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_LAST_NAME"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_NAME",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_NAME"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIM_DESCRIPTION",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIM_DESCRIPTION"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_SSN",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_SSN"
-          },
-          "description" : ""
-        }, {
-          "target" : "DATE_OF_INJURY",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "DATE_OF_INJURY"
-          },
-          "description" : ""
-        }, {
-          "target" : "DATE_OF_CLAIM",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "DATE_OF_CLAIM"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIM_STATUS",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIM_STATUS"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIM_AMOUNT",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIM_AMOUNT"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIM_TYPE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIM_TYPE"
-          },
-          "description" : ""
-        }, {
-          "target" : "EMPLOYER_NAME",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "EMPLOYER_NAME"
-          },
-          "description" : ""
-        }, {
-          "target" : "EMPLOYER_ADDRESS",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "EMPLOYER_ADDRESS"
-          },
-          "description" : ""
-        }, {
-          "target" : "EMPLOYER_CITY",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "EMPLOYER_CITY"
-          },
-          "description" : ""
-        }, {
-          "target" : "EMPLOYER_STATE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "EMPLOYER_STATE"
-          },
-          "description" : ""
-        }, {
-          "target" : "EMPLOYER_POSTAL_CODE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "EMPLOYER_POSTAL_CODE"
-          },
-          "description" : ""
-        }, {
-          "target" : "ADJUSTER_NAME",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "ADJUSTER_NAME"
-          },
-          "description" : ""
-        }, {
-          "target" : "ADJUSTER_PHONE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "ADJUSTER_PHONE"
-          },
-          "description" : ""
-        }, {
-          "target" : "ADJUSTER_EMAIL",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "ADJUSTER_EMAIL"
-          },
-          "description" : ""
-        }, {
-          "target" : "DOCTOR_NAME",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "DOCTOR_NAME"
-          },
-          "description" : ""
-        }, {
-          "target" : "DOCTOR_PHONE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "DOCTOR_PHONE"
-          },
-          "description" : ""
-        }, {
-          "target" : "DOCTOR_EMAIL",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "DOCTOR_EMAIL"
-          },
-          "description" : ""
-        }, {
-          "target" : "HOSPITAL_NAME",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "HOSPITAL_NAME"
-          },
-          "description" : ""
-        }, {
-          "target" : "HOSPITAL_ADDRESS",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "HOSPITAL_ADDRESS"
-          },
-          "description" : ""
-        }, {
-          "target" : "HOSPITAL_CITY",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "HOSPITAL_CITY"
-          },
-          "description" : ""
-        }, {
-          "target" : "HOSPITAL_STATE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "HOSPITAL_STATE"
-          },
-          "description" : ""
-        }, {
-          "target" : "HOSPITAL_POSTAL_CODE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "HOSPITAL_POSTAL_CODE"
-          },
-          "description" : ""
-        }, {
-          "target" : "TREATMENT_DATE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "TREATMENT_DATE"
-          },
-          "description" : ""
-        }, {
-          "target" : "TREATMENT_TYPE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "TREATMENT_TYPE"
-          },
-          "description" : ""
-        }, {
-          "target" : "DISABILITY_TYPE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "DISABILITY_TYPE"
-          },
-          "description" : ""
-        }, {
-          "target" : "DISABILITY_START",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "DISABILITY_START"
-          },
-          "description" : ""
-        }, {
-          "target" : "DISABILITY_END",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "DISABILITY_END"
-          },
-          "description" : ""
-        }, {
-          "target" : "BENEFIT_AMOUNT",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "BENEFIT_AMOUNT"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_PHONE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_PHONE"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_EMAIL",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_EMAIL"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_ADDRESS",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_ADDRESS"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_CITY",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_CITY"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_STATE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_STATE"
-          },
-          "description" : ""
-        }, {
-          "target" : "CLAIMANT_POSTAL_CODE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CLAIMANT_POSTAL_CODE"
-          },
-          "description" : ""
-        }, {
-          "target" : "BODY_PART",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "BODY_PART"
-          },
-          "description" : ""
-        }, {
-          "target" : "NATURE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "NATURE"
-          },
-          "description" : ""
-        }, {
-          "target" : "CAUSE",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "CAUSE"
-          },
-          "description" : ""
-        } ],
-        "importString" : "BatchID,batch_lookup(batchid)['batchid']\n,mapping_lookup",
-        "activeTab" : "expressions",
-        "columnsSelector" : [ "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##BODY_PART", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##HOSPITAL_STATE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##DOCTOR_PHONE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_STATE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##DISABILITY_START", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CAUSE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##HOSPITAL_CITY", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIM_STATUS", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIM_AMOUNT", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##ADJUSTER_NAME", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##ADJUSTER_EMAIL", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_MI", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##INSURANCE_TYPE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##NATURE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_ADDRESS", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_POSTAL_CODE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##DOCTOR_EMAIL", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##EMPLOYER_ADDRESS", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##DISABILITY_TYPE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_PHONE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##EMPLOYER_CITY", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_FIRST_NAME", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##BENEFIT_AMOUNT", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##DISABILITY_END", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_NAME", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##SOURCE_RECORD_ID", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##DATE_OF_INJURY", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIM_TYPE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIM_NUMBER", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##ADJUSTER_PHONE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##EMPLOYER_NAME", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_EMAIL", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_LAST_NAME", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIM_DESCRIPTION", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##EMPLOYER_STATE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##HOSPITAL_NAME", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##TREATMENT_TYPE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##DATE_OF_CLAIM", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_CITY", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##DOCTOR_NAME", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##HOSPITAL_POSTAL_CODE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##TREATMENT_DATE", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##HOSPITAL_ADDRESS", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##CLAIMANT_SSN", "imEqbenHP2r48ODJZBS-E$$izRUVV6qk4s1BzGmShYZQ##EMPLOYER_POSTAL_CODE" ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
-    "FFzmmmeWjMaUhpNeed4aQ$$ghEsSvQUjbDadbYfeM0BZ" : {
-      "id" : "FFzmmmeWjMaUhpNeed4aQ$$ghEsSvQUjbDadbYfeM0BZ",
-      "component" : "Lookup",
-      "metadata" : {
-        "label" : "batch_lookup_creation",
-        "slug" : "batch_lookup_creation",
-        "x" : -2160,
-        "y" : -400,
-        "phase" : -1,
-        "cache" : true,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "Creates a lookup table for batch processing, enabling efficient tracking of batch statuses and processes.",
-        "autoUpdateComment" : true
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "kwBR4qKyNO9ttZ4ad13Ii$$jcUWixWEbukQx4olf68K3",
-          "slug" : "batch",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "batchid",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The unique identifier for the control batch",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "insertdate",
-              "type" : "timestamp",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The date when the batch was inserted into the system",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "status",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The current status of the batch",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "process",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The specific process or operation associated with the batch",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "batch_status_check",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "Status check result for the batch",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "isRange" : false,
-        "processName" : "batch_lookup",
-        "keyColumns" : [ "insertdate" ],
-        "valueColumns" : [ "status", "process", "batch_status_check", "batchid" ]
-      }
-    },
-    "ha0dgFGTXUHz33X7a4jbd$$e3tRBsjV73I9cIrvZHinf" : {
-      "id" : "ha0dgFGTXUHz33X7a4jbd$$e3tRBsjV73I9cIrvZHinf",
-      "component" : "TransposeAgg",
-      "metadata" : {
-        "label" : "pivot_aggregation",
-        "slug" : "pivot_aggregation",
-        "x" : -2200,
-        "y" : -720,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "Transforms data to summarize information based on a specific target, allowing for easier analysis of key metrics.",
-        "autoUpdateComment" : true
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "Z9GnjWl-HRS9gTF6f4CcD$$LzJ8wni9TWbaWHC8i0bac",
-          "slug" : "in0",
+          "id" : "0amb1ARxSm9kABlIT8laE$$SirDELDtT4Oad5cOEmI8M",
+          "slug" : "in1",
           "schema" : {
             "type" : "struct",
             "fields" : [ {
@@ -1250,210 +756,22 @@
           "isStreaming" : false
         } ],
         "outputs" : [ {
-          "id" : "mTCst5UK9tkpBdtsc_Eot$$d8OVBQ1NTVdRRZ0cz9dY2",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "allIns" : false,
-        "doPivot" : true,
-        "aggregate" : [ {
-          "target" : "TargetColumn",
-          "expression" : {
-            "format" : "sql",
-            "expression" : "first(TargetColumn)"
-          },
-          "description" : "",
-          "_row_id" : null
-        } ],
-        "allowSelection" : true,
-        "pivotColumn" : {
-          "format" : "sql",
-          "expression" : "TargetColumn"
-        },
-        "pivotValues" : [ ],
-        "activeTab" : "aggregate",
-        "columnsSelector" : [ "Z9GnjWl-HRS9gTF6f4CcD$$LzJ8wni9TWbaWHC8i0bac##TargetColumn" ],
-        "groupBy" : [ ]
-      }
-    },
-    "vwHQNixBPrM3bbnRmO-JP$$bjLMDSmsHkW7IQM7qoUZD" : {
-      "id" : "vwHQNixBPrM3bbnRmO-JP$$bjLMDSmsHkW7IQM7qoUZD",
-      "component" : "Limit",
-      "metadata" : {
-        "label" : "limit_to_one",
-        "slug" : "limit_to_one",
-        "x" : -2060,
-        "y" : -580,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "Retrieves a single record from the dataset.",
-        "autoUpdateComment" : true
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "q7Mr4Edn0mfLjQn6ozMBr$$aV3c4lWkQJPSuvzMDa8k6",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "TargetColumn",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "The column in the target dataset where data will be mapped.",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
-        } ],
-        "outputs" : [ {
-          "id" : "UH4pS4Zh5PAVQwjhSxWxR$$4XHafMEGca7l-pczP1UWx",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "limit" : "1"
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Limit",
-        "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
-    "uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c" : {
-      "id" : "uLdzHToIphCLwg4w5sQ9s$$X55CINzhR03nVM0DCXT_c",
-      "component" : "Target",
-      "metadata" : {
-        "label" : "landing_customer1_claim",
-        "slug" : "landing_customer1_claim",
-        "x" : -1520,
-        "y" : -880,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "VPH24H_RFwXohxseoIs3b$$aoTh0Ml1-S1QbREXDte1N",
-          "slug" : "in0"
-        } ],
-        "outputs" : [ ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/customer1_claim"
-      }
-    },
-    "9gAPfYdq_7QfcrteYruc6$$bCUHx8HnrlvgPdEycRGx8" : {
-      "id" : "9gAPfYdq_7QfcrteYruc6$$bCUHx8HnrlvgPdEycRGx8",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_1",
-        "slug" : "Reformat_1",
-        "x" : -2020,
-        "y" : -720,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "yTnoTPN88WqnrJkoojpeZ$$F0JpXM812HKNLbavHsEU6",
-          "slug" : "pivot_aggregation",
+          "id" : "y74kG5mNDvh4o9puDT-Jp$$VhtkC2d5gFPWGVNIz3LWj",
+          "slug" : "out0",
           "schema" : {
             "type" : "struct",
             "fields" : [ ]
           },
           "isStreaming" : false
         } ],
-        "outputs" : [ {
-          "id" : "ui2kCftm_1FjcNbHLR8-n$$SAr9ht3f2HkTyuGd5sK5w",
-          "slug" : "out"
-        } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
       },
       "properties" : {
-        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
-        "expressions" : [ ],
-        "importString" : "",
-        "activeTab" : "expressions",
-        "columnsSelector" : [ ]
-      },
-      "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/Reformat",
-        "projectName" : "ProphecySparkBasicsPython"
-      }
-    },
-    "R1s9kBdlO6U2ilWg32UY6$$Fk0ZBGn8hRFKmeQgZhxF9" : {
-      "id" : "R1s9kBdlO6U2ilWg32UY6$$Fk0ZBGn8hRFKmeQgZhxF9",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "batch",
-        "slug" : "batch",
-        "x" : -2340,
-        "y" : -400,
-        "phase" : -1,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false,
-        "comment" : "Retrieves batch data for further analysis or processing.",
-        "autoUpdateComment" : true
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "nVE5guuagboWxxFBswTnh$$I8URe36XloZZ5efnVEiZk",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/control_batch"
-      }
-    },
-    "mjXYLDRSF8Qi1Wrt5vjpK$$zZytO6rcs-MfM-1kZFfI1" : {
-      "id" : "mjXYLDRSF8Qi1Wrt5vjpK$$zZytO6rcs-MfM-1kZFfI1",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "customer1_mapping",
-        "slug" : "customer1_mapping",
-        "x" : -2360,
-        "y" : -640,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "vnjmNlaquqnXlNxFEkhDE$$MiKUV9tD_TtLhsPCDEo8i",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/customer1_mapping"
+        "script" : "# Extract the renaming mappings from rename_col\nrename_mappings = {row['SourceColumn']: row['TargetColumn'] for row in rename_col.collect()}\n\n# Rename columns in out0 based on the mappings\nout0 = data.withColumnsRenamed(rename_mappings)",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame, in1: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
       }
     }
   },
@@ -1480,5 +798,22 @@
     "message" : "Please connect input port in0",
     "tags" : [ ],
     "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu.ports.outputs",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 3,
+    "message" : "Please infer output schema from the cluster as described [here](https://docs.prophecy.io/low-code-spark/gems/custom/script/)",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 2
   } ]
 }
