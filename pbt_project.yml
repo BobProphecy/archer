@@ -112,7 +112,7 @@ pipelines:
       inputs:
       - datasets/control_batch
       - datasets/customer1_mapping
-      - datasets/customer_claim_file
+      - datasets/raw_claims
       outputs:
       - datasets/customer1_claim
       - datasets/update_control_batch
@@ -483,6 +483,19 @@ datasets:
         description: ''
         author: bobw@prophecy.io
         createdAt: '2024-08-14 18:35:37'
+  datasets/raw_claims:
+    name: raw_claims
+    description: ''
+    author: bobw@prophecy.io
+    createdAt: '2024-08-19 15:20:46'
+    mode: batch
+    physicalDatasets:
+      Databricks-Prophecy:
+        fabricId: 9631
+        datasetType: File
+        description: ''
+        author: bobw@prophecy.io
+        createdAt: '2024-08-19 15:20:46'
 templates: {}
 jobs:
   jobs/ArcherJob:

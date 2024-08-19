@@ -1,0 +1,319 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: CLAIM_NUMBER
+    type: integer
+    nullable: true
+    metadata:
+      description: Unique identifier for each claim
+      mappings: []
+      tags: []
+  - name: SOURCE_RECORD_ID
+    type: string
+    nullable: true
+    metadata:
+      description: Identifier for the source record associated with the claim
+      mappings: []
+      tags: []
+  - name: INSURANCE_TYPE
+    type: string
+    nullable: true
+    metadata:
+      description: Type of insurance coverage related to the claim
+      mappings: []
+      tags: []
+  - name: CLAIMANT_FIRST_NAME
+    type: string
+    nullable: true
+    metadata:
+      description: First name of the individual making the claim
+      mappings: []
+      tags: []
+  - name: CLAIMANT_MI
+    type: string
+    nullable: true
+    metadata:
+      description: Middle initial of the claimant
+      mappings: []
+      tags: []
+  - name: CLAIMANT_LAST_NAME
+    type: string
+    nullable: true
+    metadata:
+      description: Last name of the claimant
+      mappings: []
+      tags: []
+  - name: CLAIMANT_NAME
+    type: string
+    nullable: true
+    metadata:
+      description: Full name of the claimant
+      mappings: []
+      tags: []
+  - name: CLAIM_DESCRIPTION
+    type: string
+    nullable: true
+    metadata:
+      description: Description of the claim made by the claimant
+      mappings: []
+      tags: []
+  - name: CLAIMANT_SSN
+    type: string
+    nullable: true
+    metadata:
+      description: Social Security Number of the claimant
+      mappings: []
+      tags: []
+  - name: DATE_OF_INJURY
+    type: date
+    nullable: true
+    metadata:
+      description: Date when the injury occurred
+      mappings: []
+      tags: []
+  - name: DATE_OF_CLAIM
+    type: date
+    nullable: true
+    metadata:
+      description: Date when the claim was filed
+      mappings: []
+      tags: []
+  - name: CLAIM_STATUS
+    type: string
+    nullable: true
+    metadata:
+      description: Current status of the claim
+      mappings: []
+      tags: []
+  - name: CLAIM_AMOUNT
+    type: integer
+    nullable: true
+    metadata:
+      description: Total amount claimed by the claimant
+      mappings: []
+      tags: []
+  - name: CLAIM_TYPE
+    type: string
+    nullable: true
+    metadata:
+      description: Type of claim being submitted
+      mappings: []
+      tags: []
+  - name: EMPLOYER_NAME
+    type: string
+    nullable: true
+    metadata:
+      description: Name of the employer associated with the claimant
+      mappings: []
+      tags: []
+  - name: EMPLOYER_ADDRESS
+    type: string
+    nullable: true
+    metadata:
+      description: Address of the employer associated with the claimant
+      mappings: []
+      tags: []
+  - name: EMPLOYER_CITY
+    type: string
+    nullable: true
+    metadata:
+      description: City where the employer is located
+      mappings: []
+      tags: []
+  - name: EMPLOYER_STATE
+    type: string
+    nullable: true
+    metadata:
+      description: State where the employer operates
+      mappings: []
+      tags: []
+  - name: EMPLOYER_POSTAL_CODE
+    type: integer
+    nullable: true
+    metadata:
+      description: Postal code of the employer's address
+      mappings: []
+      tags: []
+  - name: ADJUSTER_NAME
+    type: string
+    nullable: true
+    metadata:
+      description: Name of the claims adjuster handling the claim
+      mappings: []
+      tags: []
+  - name: ADJUSTER_PHONE
+    type: string
+    nullable: true
+    metadata:
+      description: Phone number of the claims adjuster handling the case
+      mappings: []
+      tags: []
+  - name: ADJUSTER_EMAIL
+    type: string
+    nullable: true
+    metadata:
+      description: Email address of the claims adjuster for communication
+      mappings: []
+      tags: []
+  - name: DOCTOR_NAME
+    type: string
+    nullable: true
+    metadata:
+      description: Name of the doctor associated with the claim
+      mappings: []
+      tags: []
+  - name: DOCTOR_PHONE
+    type: string
+    nullable: true
+    metadata:
+      description: Phone number of the doctor for contact regarding the claim
+      mappings: []
+      tags: []
+  - name: DOCTOR_EMAIL
+    type: string
+    nullable: true
+    metadata:
+      description: Email address of the doctor treating the claimant
+      mappings: []
+      tags: []
+  - name: HOSPITAL_NAME
+    type: string
+    nullable: true
+    metadata:
+      description: Name of the hospital where treatment was provided
+      mappings: []
+      tags: []
+  - name: HOSPITAL_ADDRESS
+    type: string
+    nullable: true
+    metadata:
+      description: Address of the hospital where the claimant received care
+      mappings: []
+      tags: []
+  - name: HOSPITAL_CITY
+    type: string
+    nullable: true
+    metadata:
+      description: City where the hospital is located
+      mappings: []
+      tags: []
+  - name: HOSPITAL_STATE
+    type: string
+    nullable: true
+    metadata:
+      description: State where the hospital providing treatment is located
+      mappings: []
+      tags: []
+  - name: HOSPITAL_POSTAL_CODE
+    type: string
+    nullable: true
+    metadata:
+      description: Postal code of the hospital providing treatment
+      mappings: []
+      tags: []
+  - name: TREATMENT_DATE
+    type: string
+    nullable: true
+    metadata:
+      description: Date when the treatment was administered
+      mappings: []
+      tags: []
+  - name: TREATMENT_TYPE
+    type: string
+    nullable: true
+    metadata:
+      description: Type of treatment received by the claimant
+      mappings: []
+      tags: []
+  - name: DISABILITY_TYPE
+    type: string
+    nullable: true
+    metadata:
+      description: Type of disability claimed by the claimant
+      mappings: []
+      tags: []
+  - name: DISABILITY_START
+    type: string
+    nullable: true
+    metadata:
+      description: Start date of the disability period
+      mappings: []
+      tags: []
+  - name: DISABILITY_END
+    type: string
+    nullable: true
+    metadata:
+      description: End date of the disability period
+      mappings: []
+      tags: []
+  - name: BENEFIT_AMOUNT
+    type: string
+    nullable: true
+    metadata:
+      description: Amount of benefits claimed by the claimant
+      mappings: []
+      tags: []
+  - name: CLAIMANT_PHONE
+    type: string
+    nullable: true
+    metadata:
+      description: Phone number of the claimant
+      mappings: []
+      tags: []
+  - name: CLAIMANT_EMAIL
+    type: string
+    nullable: true
+    metadata:
+      description: Email address of the claimant
+      mappings: []
+      tags: []
+  - name: CLAIMANT_ADDRESS
+    type: string
+    nullable: true
+    metadata:
+      description: Residential address of the claimant
+      mappings: []
+      tags: []
+  - name: CLAIMANT_CITY
+    type: string
+    nullable: true
+    metadata:
+      description: City where the claimant resides
+      mappings: []
+      tags: []
+  - name: CLAIMANT_STATE
+    type: string
+    nullable: true
+    metadata:
+      description: State where the claimant resides
+      mappings: []
+      tags: []
+  - name: CLAIMANT_POSTAL_CODE
+    type: string
+    nullable: true
+    metadata:
+      description: Postal code of the claimant's address
+      mappings: []
+      tags: []
+  - name: BODY_PART
+    type: string
+    nullable: true
+    metadata:
+      description: Body part affected by the claim
+      mappings: []
+      tags: []
+  - name: NATURE
+    type: string
+    nullable: true
+    metadata:
+      description: Nature of the injury or condition related to the claim
+      mappings: []
+      tags: []
+  - name: CAUSE
+    type: string
+    nullable: true
+    metadata:
+      description: The reason or event that led to the claim being filed.
+      mappings: []
+      tags: []

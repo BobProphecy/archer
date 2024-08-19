@@ -77,12 +77,6 @@
     "configurationVersion" : "v2"
   },
   "connections" : [ {
-    "id" : "4MOLmbSWhHYuP3nclI7eC",
-    "source" : "NeGa1g8aINafllr_7flj8$$RsqUPI7BQ_Pky12DO09ul",
-    "sourcePort" : "HjGd8JyCeE77wWCOjoLRB$$bHX4tBXgqbnlzC3ctBzFc",
-    "target" : "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu",
-    "targetPort" : "-dyUO90VK0FUkXAtk3rDE$$WMicL0Nkg4mFd4vdrmixU"
-  }, {
     "id" : "dNKdQsR2YBgMLvOgJGQBa",
     "source" : "x6zov8W87uDsW03ihJP5a$$usyVsqHhM32S2AWVIe8Ep",
     "sourcePort" : "yDmWK95g4zibnxCSVLpYN$$ObFEohr3ZPJgP5zPFjjM9",
@@ -136,27 +130,33 @@
     "sourcePort" : "CiTDEmlavuLSRPFrhP9ox$$JvlHpbIlfrZeSblD3xHGi",
     "target" : "kAf8JGYJNu8IAGmlega2B$$op0L6-ykrU4Obu-0vJgU3",
     "targetPort" : "PY7VNlGvKUm2eL8O6oijS$$KIPo5TOKXdNj7H7FbVRVp"
+  }, {
+    "id" : "hht0-3x7U7MIimYsZqktM",
+    "source" : "dE3WEJ4nun6X2fkdUw_iy$$_7xrzFcj7bkg1Idge7z7m",
+    "sourcePort" : "EddNOYwTIofU_xH_fuG6u$$HwD4-faU3MONq3wS3Trxl",
+    "target" : "U8S2V6k_wTCQXT8-vp6Lq$$vgwU-MeJG-mcdRJ2eMCZu",
+    "targetPort" : "-dyUO90VK0FUkXAtk3rDE$$WMicL0Nkg4mFd4vdrmixU"
   } ],
   "processes" : {
-    "NeGa1g8aINafllr_7flj8$$RsqUPI7BQ_Pky12DO09ul" : {
-      "id" : "NeGa1g8aINafllr_7flj8$$RsqUPI7BQ_Pky12DO09ul",
+    "dE3WEJ4nun6X2fkdUw_iy$$_7xrzFcj7bkg1Idge7z7m" : {
+      "id" : "dE3WEJ4nun6X2fkdUw_iy$$_7xrzFcj7bkg1Idge7z7m",
       "component" : "Source",
       "metadata" : {
-        "label" : "customer_claim_file",
-        "slug" : "customer_claim_file",
+        "label" : "raw_claims",
+        "slug" : "raw_claims",
         "x" : -2340,
-        "y" : -740,
+        "y" : -720,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Loads customer claim data from a specified file, enabling analysis of claims and associated details for better decision-making.",
+        "comment" : "Loads raw claims data from a specified source, enabling analysis of insurance claims and associated details.",
         "autoUpdateComment" : true
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "HjGd8JyCeE77wWCOjoLRB$$bHX4tBXgqbnlzC3ctBzFc",
+          "id" : "EddNOYwTIofU_xH_fuG6u$$HwD4-faU3MONq3wS3Trxl",
           "slug" : "out"
         } ],
         "selectedInputFields" : [ ],
@@ -164,7 +164,7 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "datasetId" : "datasets/customer_claim_file"
+        "datasetId" : "datasets/raw_claims"
       }
     },
     "FFzmmmeWjMaUhpNeed4aQ$$ghEsSvQUjbDadbYfeM0BZ" : {
@@ -254,7 +254,7 @@
               }
             }, {
               "name" : "ClaimNumber",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -335,7 +335,7 @@
               }
             }, {
               "name" : "DateOfInjury",
-              "type" : "string",
+              "type" : "date",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -344,7 +344,7 @@
               }
             }, {
               "name" : "DateOfClaim",
-              "type" : "string",
+              "type" : "date",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -362,7 +362,7 @@
               }
             }, {
               "name" : "ClaimAmount",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -416,7 +416,7 @@
               }
             }, {
               "name" : "EmployerZip",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -668,6 +668,42 @@
       },
       "properties" : {
         "datasetId" : "datasets/customer1_claim"
+      }
+    },
+    "NP66bqffHgr2AxA2MDSId$$I2YuE6uChqCzmMEsEvOqK" : {
+      "id" : "NP66bqffHgr2AxA2MDSId$$I2YuE6uChqCzmMEsEvOqK",
+      "component" : "FileOperation",
+      "metadata" : {
+        "label" : "clean_up_files",
+        "slug" : "clean_up_files",
+        "x" : -1760,
+        "y" : -420,
+        "phase" : 1,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Transfers raw claim files to a processed directory for further analysis.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "recurse" : false,
+        "source" : "/Volumes/archer_pov/orchestrate/raw/ARCHER_Customer1SampleClaimFile_*",
+        "filesystem" : "dbfs",
+        "fileRegex" : null,
+        "operation" : "move",
+        "ignoreEmptyFiles" : false,
+        "destination" : "/Volumes/archer_pov/orchestrate/processed/"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/FileOperation",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     },
     "MAH7LYyl44ptmhaNg3Q0n$$Yo4f7d5jE9ik9nGA6iaaq" : {
@@ -1132,7 +1168,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "ClaimNumber",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1213,7 +1249,7 @@
               }
             }, {
               "name" : "DateOfInjury",
-              "type" : "string",
+              "type" : "date",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1222,7 +1258,7 @@
               }
             }, {
               "name" : "DateOfClaim",
-              "type" : "string",
+              "type" : "date",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1240,7 +1276,7 @@
               }
             }, {
               "name" : "ClaimAmount",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1294,7 +1330,7 @@
               }
             }, {
               "name" : "EmployerZip",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -1904,10 +1940,10 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "CLAIM_NUMBER",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for the claim",
+                "description" : "Unique identifier for each claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1916,7 +1952,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Identifier for the source record of the claim",
+                "description" : "Identifier for the source record associated with the claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1925,7 +1961,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Type of insurance associated with the claim",
+                "description" : "Type of insurance coverage related to the claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1934,7 +1970,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "First name of the claimant",
+                "description" : "First name of the individual making the claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1970,7 +2006,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Description of the claim",
+                "description" : "Description of the claim made by the claimant",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1985,7 +2021,7 @@
               }
             }, {
               "name" : "DATE_OF_INJURY",
-              "type" : "string",
+              "type" : "date",
               "nullable" : true,
               "metadata" : {
                 "description" : "Date when the injury occurred",
@@ -1994,7 +2030,7 @@
               }
             }, {
               "name" : "DATE_OF_CLAIM",
-              "type" : "string",
+              "type" : "date",
               "nullable" : true,
               "metadata" : {
                 "description" : "Date when the claim was filed",
@@ -2006,16 +2042,16 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Status of the claim",
+                "description" : "Current status of the claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "CLAIM_AMOUNT",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The amount claimed by the customer",
+                "description" : "Total amount claimed by the claimant",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2024,7 +2060,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The type of claim made by the customer",
+                "description" : "Type of claim being submitted",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2033,7 +2069,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the employer associated with the claim",
+                "description" : "Name of the employer associated with the claimant",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2042,7 +2078,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The address of the employer associated with the claim",
+                "description" : "Address of the employer associated with the claimant",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2060,13 +2096,13 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "State where the employer is located",
+                "description" : "State where the employer operates",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
             }, {
               "name" : "EMPLOYER_POSTAL_CODE",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "Postal code of the employer's address",
@@ -2078,7 +2114,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Name of the claims adjuster assigned to the claim",
+                "description" : "Name of the claims adjuster handling the claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2087,7 +2123,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Phone number of the claims adjuster assigned to the claim",
+                "description" : "Phone number of the claims adjuster handling the case",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2096,7 +2132,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Email address of the claims adjuster assigned to the claim",
+                "description" : "Email address of the claims adjuster for communication",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2105,7 +2141,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Name of the doctor treating the claimant",
+                "description" : "Name of the doctor associated with the claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2114,7 +2150,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Phone number of the doctor treating the claimant",
+                "description" : "Phone number of the doctor for contact regarding the claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2123,7 +2159,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Email address of the doctor associated with the claim",
+                "description" : "Email address of the doctor treating the claimant",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2132,7 +2168,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Name of the hospital associated with the claim",
+                "description" : "Name of the hospital where treatment was provided",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2141,7 +2177,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Address of the hospital associated with the claim",
+                "description" : "Address of the hospital where the claimant received care",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2150,7 +2186,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "City where the hospital associated with the claim is located",
+                "description" : "City where the hospital is located",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2159,7 +2195,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "State where the hospital is located",
+                "description" : "State where the hospital providing treatment is located",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2168,7 +2204,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Postal code of the hospital's location",
+                "description" : "Postal code of the hospital providing treatment",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2177,7 +2213,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Date when the treatment was provided",
+                "description" : "Date when the treatment was administered",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2195,7 +2231,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Type of disability claimed by the customer",
+                "description" : "Type of disability claimed by the claimant",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2222,7 +2258,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Amount of benefits claimed for the disability",
+                "description" : "Amount of benefits claimed by the claimant",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2249,7 +2285,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Address of the claimant",
+                "description" : "Residential address of the claimant",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2258,7 +2294,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "City of the claimant",
+                "description" : "City where the claimant resides",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2285,7 +2321,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Specific body part affected by the claim",
+                "description" : "Body part affected by the claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2294,7 +2330,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Nature or type of the claim",
+                "description" : "Nature of the injury or condition related to the claim",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2303,7 +2339,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The cause of the claim, indicating the reason or event that led to the claim being filed",
+                "description" : "The reason or event that led to the claim being filed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2353,7 +2389,7 @@
             "type" : "struct",
             "fields" : [ {
               "name" : "ClaimNumber",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -2434,7 +2470,7 @@
               }
             }, {
               "name" : "DateOfInjury",
-              "type" : "string",
+              "type" : "date",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -2443,7 +2479,7 @@
               }
             }, {
               "name" : "DateOfClaim",
-              "type" : "string",
+              "type" : "date",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -2461,7 +2497,7 @@
               }
             }, {
               "name" : "ClaimAmount",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
@@ -2515,7 +2551,7 @@
               }
             }, {
               "name" : "EmployerZip",
-              "type" : "string",
+              "type" : "integer",
               "nullable" : true,
               "metadata" : {
                 "description" : "",
