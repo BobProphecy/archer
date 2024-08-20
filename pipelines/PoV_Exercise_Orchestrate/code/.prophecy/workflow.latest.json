@@ -676,8 +676,8 @@
       "metadata" : {
         "label" : "clean_up_files",
         "slug" : "clean_up_files",
-        "x" : -1760,
-        "y" : -420,
+        "x" : -1700,
+        "y" : -440,
         "phase" : 1,
         "cache" : false,
         "detailedStats" : false,

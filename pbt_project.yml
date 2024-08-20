@@ -68,38 +68,6 @@ pipelines:
       - datasets/update_control_batch
     subgraphs: []
     dependencies: {}
-  pipelines/PoV_Exercise_ntong:
-    name: PoV_Exercise_ntong
-    description: null
-    author: bobw@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2024-08-12 19:11:06'
-    datasets:
-      inputs:
-      - datasets/control_batch
-      - datasets/customer_claim_file
-      outputs:
-      - datasets/customer1_claim
-    subgraphs: []
-    dependencies: {}
-  pipelines/PoV_Exercise_basic:
-    name: PoV_Exercise_basic
-    description: null
-    author: bobw@prophecy.io
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2024-08-13 19:40:53'
-    datasets:
-      inputs:
-      - datasets/control_batch
-      - datasets/customer_claim_file
-      outputs:
-      - datasets/customer1_claim
-    subgraphs: []
-    dependencies: {}
   pipelines/PoV_Exercise_Orchestrate:
     name: PoV_Exercise_Orchestrate
     description: null
@@ -116,6 +84,21 @@ pipelines:
       outputs:
       - datasets/customer1_claim
       - datasets/update_control_batch
+    subgraphs: []
+    dependencies: {}
+  pipelines/FilePathParse:
+    name: FilePathParse
+    description: ''
+    author: bobw@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-08-20 14:14:00'
+    datasets:
+      inputs:
+      - datasets/customer_claim_file
+      - datasets/raw_control_batch
+      outputs: []
     subgraphs: []
     dependencies: {}
 datasets:

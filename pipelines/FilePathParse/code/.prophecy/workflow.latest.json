@@ -1,0 +1,315 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.0.31",
+        "pyPiVersion" : "1.9.9"
+      }
+    },
+    "id" : "1",
+    "uri" : "pipelines/FilePathParse",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "FilePathParse",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true
+    },
+    "language" : "python",
+    "fabricId" : "9631",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "archer.archer.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.streaming.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12656",
+      "projectName" : "ProphecyStreamingPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "filepathparse",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "dzNREkI_Xi_nXm0xO8EKx$$D5Uva_v5Mx-GVYlBocEFA",
+    "source" : "si43ZXH6H972iMwui5vhK$$SfEhI81Y6lnUXriZDsR5z",
+    "sourcePort" : "x2RFJfw-gUYOhF_zkYo0Q$$WuuNyAXIwVuwjfBieZk_X",
+    "target" : "nCNazYD-EvaVktR_78sHe$$i3CDJ-_oWp_GnrmbvqMqz",
+    "targetPort" : "ikxDaN4rUruj3dBiAsbEq$$svVZXsBxjwK-PtZqUy98I"
+  } ],
+  "processes" : {
+    "xZjOGWakc44JgLZwoqZ31$$y6RwZlltdK1PaLrBMTUi9" : {
+      "id" : "xZjOGWakc44JgLZwoqZ31$$y6RwZlltdK1PaLrBMTUi9",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customer_claim_file",
+        "slug" : "customer_claim_file",
+        "x" : -280,
+        "y" : -140,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "VTYrESHs0AF4Xs9HOWnQW$$eEJ1biZGvkdM_JIaH9_PV",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/customer_claim_file"
+      }
+    },
+    "nCNazYD-EvaVktR_78sHe$$i3CDJ-_oWp_GnrmbvqMqz" : {
+      "id" : "nCNazYD-EvaVktR_78sHe$$i3CDJ-_oWp_GnrmbvqMqz",
+      "component" : "SchemaTransform",
+      "metadata" : {
+        "label" : "SchemaTransform_1",
+        "slug" : "SchemaTransform_1",
+        "x" : -80,
+        "y" : 80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ikxDaN4rUruj3dBiAsbEq$$svVZXsBxjwK-PtZqUy98I",
+          "slug" : "customer_claim_file",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "batchid",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The unique identifier for the control batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "insertdate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The date when the batch was inserted into the system",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The current status of the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "process",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The specific process or operation associated with the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "batch_status_check",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Status check result for the batch",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "uHcXK6yYYXdRQ17aaCjxB$$7OeToO808it0Mvhf96BiQ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            },
+            "param_errors" : [ ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddReplaceColumn",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "file_input_path",
+            "expression" : {
+              "format" : "sql",
+              "expression" : "expr(\"_metadata.file_path\")"
+            }
+          }
+        }, {
+          "AddRule" : {
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            },
+            "param_errors" : [ ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddReplaceColumn",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "file_input_split",
+            "expression" : {
+              "format" : "sql",
+              "expression" : "split(file_input_path, \"/\" )"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.26&projectSubscriptionProjectId=12654&path=gems/SchemaTransform",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "si43ZXH6H972iMwui5vhK$$SfEhI81Y6lnUXriZDsR5z" : {
+      "id" : "si43ZXH6H972iMwui5vhK$$SfEhI81Y6lnUXriZDsR5z",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "raw_control_batch",
+        "slug" : "raw_control_batch",
+        "x" : -300,
+        "y" : 80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "x2RFJfw-gUYOhF_zkYo0Q$$WuuNyAXIwVuwjfBieZk_X",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/raw_control_batch"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.nCNazYD-EvaVktR_78sHe$$i3CDJ-_oWp_GnrmbvqMqz",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Error occurred while doing Schema Analysis: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column or function parameter with name `_metadata`.`file_path` cannot be resolved. Did you mean one of the following? [`batchid`, `insertdate`, `status`, `batch_status_check`, `process`].; line 1 pos 0;\n'Project [batchid#29764, insertdate#29765, status#29766, process#29767, batch_status_check#29768, '_metadata.file_path AS file_input_path#29774]\n+- LogicalRDD [batchid#29764, insertdate#29765, status#29766, process#29767, batch_status_check#29768], false\n",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}

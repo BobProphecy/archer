@@ -1,1 +1,0 @@
-from .pov_exercise_basic import *
