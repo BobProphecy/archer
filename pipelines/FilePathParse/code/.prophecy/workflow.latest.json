@@ -84,33 +84,6 @@
     "targetPort" : "ikxDaN4rUruj3dBiAsbEq$$svVZXsBxjwK-PtZqUy98I"
   } ],
   "processes" : {
-    "xZjOGWakc44JgLZwoqZ31$$y6RwZlltdK1PaLrBMTUi9" : {
-      "id" : "xZjOGWakc44JgLZwoqZ31$$y6RwZlltdK1PaLrBMTUi9",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "customer_claim_file",
-        "slug" : "customer_claim_file",
-        "x" : -280,
-        "y" : -140,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "VTYrESHs0AF4Xs9HOWnQW$$eEJ1biZGvkdM_JIaH9_PV",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/customer_claim_file"
-      }
-    },
     "nCNazYD-EvaVktR_78sHe$$i3CDJ-_oWp_GnrmbvqMqz" : {
       "id" : "nCNazYD-EvaVktR_78sHe$$i3CDJ-_oWp_GnrmbvqMqz",
       "component" : "SchemaTransform",
@@ -123,6 +96,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
+        "comment" : "Enhances customer claim data by adding file path and split information for better traceability.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -182,11 +156,83 @@
         } ],
         "outputs" : [ {
           "id" : "uHcXK6yYYXdRQ17aaCjxB$$7OeToO808it0Mvhf96BiQ",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "batchid",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "insertdate",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "status",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "process",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "batch_status_check",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "file_input_path",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "file_input_split",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : false
+              },
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
       },
       "properties" : {
         "importLanguage" : "sql",
@@ -294,22 +340,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.nCNazYD-EvaVktR_78sHe$$i3CDJ-_oWp_GnrmbvqMqz",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Error occurred while doing Schema Analysis: [UNRESOLVED_COLUMN.WITH_SUGGESTION] A column or function parameter with name `_metadata`.`file_path` cannot be resolved. Did you mean one of the following? [`batchid`, `insertdate`, `status`, `batch_status_check`, `process`].; line 1 pos 0;\n'Project [batchid#29764, insertdate#29765, status#29766, process#29767, batch_status_check#29768, '_metadata.file_path AS file_input_path#29774]\n+- LogicalRDD [batchid#29764, insertdate#29765, status#29766, process#29767, batch_status_check#29768], false\n",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  } ]
+  }
 }

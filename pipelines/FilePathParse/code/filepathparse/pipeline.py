@@ -7,8 +7,8 @@ from prophecy.utils import *
 from filepathparse.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_customer_claim_file = customer_claim_file(spark)
     df_raw_control_batch = raw_control_batch(spark)
+    df_SchemaTransform_1 = SchemaTransform_1(spark, df_raw_control_batch)
 
 def main():
     spark = SparkSession.builder\

@@ -1,2 +1,2 @@
-from .customer_claim_file import customer_claim_file
+from .SchemaTransform_1 import SchemaTransform_1
 from .raw_control_batch import raw_control_batch

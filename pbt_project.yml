@@ -96,7 +96,6 @@ pipelines:
     createdAt: '2024-08-20 14:14:00'
     datasets:
       inputs:
-      - datasets/customer_claim_file
       - datasets/raw_control_batch
       outputs: []
     subgraphs: []
