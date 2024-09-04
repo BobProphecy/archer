@@ -11,9 +11,9 @@
   } ],
   "request" : {
     "format" : "MULTI_TASK",
-    "name" : "ArcherJob",
+    "name" : "ClaimsJob",
     "job_clusters" : [ {
-      "job_cluster_key" : "ArcherJob_default_small",
+      "job_cluster_key" : "ClaimsJob_default_small",
       "new_cluster" : {
         "spark_version" : "12.2.x-scala2.12",
         "node_type_id" : "i3.xlarge",
@@ -53,7 +53,7 @@
     "email_notifications" : { },
     "tasks" : [ {
       "task_key" : "PoV_Exercise_Orchestrate",
-      "job_cluster_key" : "ArcherJob_default_small",
+      "job_cluster_key" : "ClaimsJob_default_small",
       "python_wheel_task" : {
         "package_name" : "PoV_Exercise_Orchestrate",
         "entry_point" : "main",

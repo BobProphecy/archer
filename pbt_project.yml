@@ -1,6 +1,6 @@
 name: archer
 description: |
-  Archer data exercise - 7/29/2024
+  Data exercise - 7/29/2024
 version: 1.0.2
 author: bobw@prophecy.io
 language: python
@@ -481,7 +481,7 @@ datasets:
 templates: {}
 jobs:
   jobs/ArcherJob:
-    name: ArcherJob
+    name: ClaimsJob
     description: ''
     fabricUID: 9631
     scheduler:

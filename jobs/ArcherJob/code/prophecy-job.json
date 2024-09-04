@@ -3,7 +3,7 @@
     "type" : "Databricks",
     "fabricId" : "9631",
     "jobId" : "jobs/ArcherJob",
-    "name" : "ArcherJob",
+    "name" : "ClaimsJob",
     "schedule" : "0 0 0 1/1 * ? *",
     "scheduleTimeZone" : "UTC",
     "jobClusterMode" : {
@@ -64,7 +64,7 @@
         "configurations" : {
           "schema" : [ ],
           "instances" : {
-            "archer" : [ "default" ]
+            "ClaimsProcessing" : [ "default" ]
           },
           "overrides" : { },
           "selectedInstance" : "default"

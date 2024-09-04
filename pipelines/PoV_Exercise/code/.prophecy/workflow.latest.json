@@ -1907,7 +1907,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Unique identifier for the claim",
+                "description" : "Unique identifier for each claim; Represents the specific claim being processed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1916,7 +1916,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Identifier for the source record of the claim",
+                "description" : "Identifier for the source record associated with the claim; Used for tracking the origin of the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1925,7 +1925,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Type of insurance associated with the claim",
+                "description" : "Type of insurance coverage applicable to the claim; Indicates the nature of the insurance.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1934,7 +1934,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "First name of the claimant",
+                "description" : "First name of the individual filing the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1943,7 +1943,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Middle initial of the claimant",
+                "description" : "Middle initial of the claimant; Provides additional identification for the claimant.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1952,7 +1952,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Last name of the claimant",
+                "description" : "Last name of the claimant; Essential for identifying the individual involved in the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1961,7 +1961,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Full name of the claimant",
+                "description" : "Full name of the claimant; Combines first, middle initial, and last name for complete identification.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1970,7 +1970,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Description of the claim",
+                "description" : "Description of the claim; Summarizes the nature of the injury or incident leading to the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1979,7 +1979,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Social Security Number of the claimant",
+                "description" : "Social Security Number of the claimant; Used for identification purposes.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1988,7 +1988,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Date when the injury occurred",
+                "description" : "Date when the injury occurred; Format is YYYY-MM-DD.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1997,7 +1997,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Date when the claim was filed",
+                "description" : "Date when the claim was filed; Format is YYYY-MM-DD.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2006,7 +2006,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Status of the claim",
+                "description" : "Current status of the claim; Indicates whether the claim is Open, Closed, or in another state.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2015,7 +2015,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The amount claimed by the customer",
+                "description" : "Total monetary amount claimed for the injury or incident.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2024,7 +2024,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The type of claim made by the customer",
+                "description" : "Type of claim being filed; Indicates the nature of the claim such as Medical or Disability.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2033,7 +2033,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the employer associated with the claim",
+                "description" : "Name of the employer associated with the claimant.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2042,7 +2042,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The address of the employer associated with the claim",
+                "description" : "Street address of the employer; Provides the location of the employer's business.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2051,7 +2051,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "City where the employer is located",
+                "description" : "City where the employer is located.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2060,7 +2060,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "State where the employer is located",
+                "description" : "State where the employer operates.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2069,7 +2069,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Postal code of the employer's address",
+                "description" : "Postal code for the employer's address.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2078,7 +2078,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Name of the claims adjuster assigned to the claim",
+                "description" : "Name of the insurance adjuster handling the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2087,7 +2087,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Phone number of the claims adjuster assigned to the claim",
+                "description" : "Phone number of the claims adjuster handling the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2096,7 +2096,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Email address of the claims adjuster assigned to the claim",
+                "description" : "Email address of the claims adjuster for communication regarding the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2105,7 +2105,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Name of the doctor treating the claimant",
+                "description" : "Name of the doctor providing treatment related to the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2114,7 +2114,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Phone number of the doctor treating the claimant",
+                "description" : "Phone number of the doctor for contact regarding the treatment.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2123,7 +2123,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Email address of the doctor associated with the claim",
+                "description" : "Email address of the doctor treating the claimant.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2132,7 +2132,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Name of the hospital associated with the claim",
+                "description" : "Name of the hospital where the claimant received treatment.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2141,7 +2141,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Address of the hospital associated with the claim",
+                "description" : "Physical address of the hospital providing care to the claimant.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2150,7 +2150,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "City where the hospital associated with the claim is located",
+                "description" : "City where the hospital is located.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2159,7 +2159,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "State where the hospital is located",
+                "description" : "State where the hospital is located; Represents the two-letter state abbreviation.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2168,7 +2168,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Postal code of the hospital's location",
+                "description" : "Postal code for the hospital's location; Indicates the specific area within the state.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2177,7 +2177,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Date when the treatment was provided",
+                "description" : "Date when the treatment was administered; Format is YYYY-MM-DD.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2186,7 +2186,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Type of treatment received by the claimant",
+                "description" : "Type of treatment received; Describes the medical procedure performed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2195,7 +2195,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Type of disability claimed by the customer",
+                "description" : "Type of disability resulting from the claim; Indicates whether the disability is temporary or permanent.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2204,7 +2204,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Start date of the disability period",
+                "description" : "Date when the disability began; Format is YYYY-MM-DD.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2213,7 +2213,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "End date of the disability period",
+                "description" : "Date when the disability ended or is expected to end; Format is YYYY-MM-DD.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2222,7 +2222,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Amount of benefits claimed for the disability",
+                "description" : "Total amount of benefits awarded to the claimant; Represented as a monetary value.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2231,7 +2231,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Phone number of the claimant",
+                "description" : "Phone number of the claimant for communication regarding the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2240,7 +2240,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Email address of the claimant",
+                "description" : "Email address of the claimant for electronic correspondence.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2249,7 +2249,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Address of the claimant",
+                "description" : "Residential address of the claimant, providing details for correspondence.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2258,7 +2258,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "City of the claimant",
+                "description" : "City where the claimant resides, part of their address information.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2267,7 +2267,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "State where the claimant resides",
+                "description" : "State where the claimant resides; Indicates the state of the claimant's address.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2276,7 +2276,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Postal code of the claimant's address",
+                "description" : "Postal code of the claimant's address; Used for mail delivery and location identification.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2285,7 +2285,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Specific body part affected by the claim",
+                "description" : "Specific body part affected by the injury; Identifies the area of the injury.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2294,7 +2294,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "Nature or type of the claim",
+                "description" : "Nature of the injury; Describes the type of injury sustained by the claimant.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2303,7 +2303,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The cause of the claim, indicating the reason or event that led to the claim being filed",
+                "description" : "The reason for the injury or claim; Describes the specific incident that led to the claim.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2320,7 +2320,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The intended destination for data mapping.",
+                "description" : "The name of the target dataset where the data will be mapped.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2329,7 +2329,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The name of the original column from the source data.",
+                "description" : "The name of the column in the source dataset that corresponds to the target mapping.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2338,7 +2338,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The column in the target dataset where data will be mapped.",
+                "description" : "The name of the column in the target dataset where the data will be mapped.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
