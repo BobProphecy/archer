@@ -20,7 +20,8 @@ schema:
     type: integer
     nullable: true
     metadata:
-      description: The current status of the batch
+      description: Current status of the batch process; Indicates the state of the
+        batch, such as in progress or completed.
       mappings: []
       tags: []
   - name: process
@@ -34,6 +35,7 @@ schema:
     type: integer
     nullable: true
     metadata:
-      description: Status check result for the batch
+      description: Indicator of the current status of the batch process; Helps in
+        monitoring the progress of the batch ingestion.
       mappings: []
       tags: []

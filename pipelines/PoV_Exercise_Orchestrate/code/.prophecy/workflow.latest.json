@@ -732,7 +732,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The unique identifier for the control batch",
+                "description" : "Unique identifier for each batch of data processed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -741,7 +741,7 @@
               "type" : "timestamp",
               "nullable" : true,
               "metadata" : {
-                "description" : "The date when the batch was inserted into the system",
+                "description" : "Timestamp indicating when the batch was inserted into the system; Format is ISO 8601.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -750,7 +750,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The current status of the batch",
+                "description" : "Current status of the batch process; Indicates the state of the batch, such as in progress or completed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -759,7 +759,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The specific process or operation associated with the batch",
+                "description" : "Name of the process associated with the batch; Indicates the specific operation being performed, such as claim ingestion.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -768,7 +768,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "Status check result for the batch",
+                "description" : "Indicator of the current status of the batch process; Helps in monitoring the progress of the batch ingestion.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -857,7 +857,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The unique identifier for the control batch",
+                "description" : "Unique identifier for each batch of data processed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -866,7 +866,7 @@
               "type" : "timestamp",
               "nullable" : true,
               "metadata" : {
-                "description" : "The date when the batch was inserted into the system",
+                "description" : "Timestamp indicating when the batch was inserted into the system; Format is ISO 8601.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -875,7 +875,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The current status of the batch",
+                "description" : "Current status of the batch process; Indicates the state of the batch, such as in progress or completed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -884,7 +884,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The specific process or operation associated with the batch",
+                "description" : "Name of the process associated with the batch; Indicates the specific operation being performed, such as claim ingestion.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -893,7 +893,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "Status check result for the batch",
+                "description" : "Indicator of the current status of the batch process; Helps in monitoring the progress of the batch ingestion.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -988,7 +988,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The current status of the batch",
+                "description" : "Current status of the batch process; Indicates the state of the batch, such as in progress or completed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1006,7 +1006,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "Status check result for the batch",
+                "description" : "Indicator of the current status of the batch process; Helps in monitoring the progress of the batch ingestion.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1049,7 +1049,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The unique identifier for the control batch",
+                "description" : "Unique identifier for each batch of data processed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1058,7 +1058,7 @@
               "type" : "timestamp",
               "nullable" : true,
               "metadata" : {
-                "description" : "The date when the batch was inserted into the system",
+                "description" : "Timestamp indicating when the batch was inserted into the system; Format is ISO 8601.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1067,7 +1067,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The current status of the batch",
+                "description" : "Current status of the batch process; Indicates the state of the batch, such as in progress or completed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1076,7 +1076,7 @@
               "type" : "string",
               "nullable" : true,
               "metadata" : {
-                "description" : "The specific process or operation associated with the batch",
+                "description" : "Name of the process associated with the batch; Indicates the specific operation being performed, such as claim ingestion.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -1085,7 +1085,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "Status check result for the batch",
+                "description" : "Indicator of the current status of the batch process; Helps in monitoring the progress of the batch ingestion.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2850,7 +2850,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "The current status of the batch",
+                "description" : "Current status of the batch process; Indicates the state of the batch, such as in progress or completed.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
@@ -2868,7 +2868,7 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : {
-                "description" : "Status check result for the batch",
+                "description" : "Indicator of the current status of the batch process; Helps in monitoring the progress of the batch ingestion.",
                 "mappings" : [ ],
                 "tags" : [ ]
               }
