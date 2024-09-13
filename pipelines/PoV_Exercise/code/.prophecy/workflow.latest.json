@@ -144,8 +144,8 @@
       "metadata" : {
         "label" : "customer_claim_file",
         "slug" : "customer_claim_file",
-        "x" : -2000,
-        "y" : -760,
+        "x" : -2020,
+        "y" : -780,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,

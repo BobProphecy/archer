@@ -90,8 +90,8 @@
       "metadata" : {
         "label" : "SchemaTransform_1",
         "slug" : "SchemaTransform_1",
-        "x" : -80,
-        "y" : 80,
+        "x" : -100,
+        "y" : -60,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -312,8 +312,8 @@
       "metadata" : {
         "label" : "raw_control_batch",
         "slug" : "raw_control_batch",
-        "x" : -300,
-        "y" : 80,
+        "x" : -360,
+        "y" : -60,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
